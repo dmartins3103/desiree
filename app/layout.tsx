@@ -1,14 +1,14 @@
 import type { Metadata, Viewport } from "next";
-import { Spectral, Hanken_Grotesk } from "next/font/google";
+import { Cormorant_Garamond, Hanken_Grotesk } from "next/font/google";
 import { site } from "@/lib/site";
 import { JsonLd, organizationJsonLd, websiteJsonLd } from "@/lib/jsonld";
 import "./globals.css";
 
-const spectral = Spectral({
+const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600"],
+  weight: ["400", "500", "600", "700"],
   style: ["normal", "italic"],
-  variable: "--font-spectral",
+  variable: "--font-cormorant",
   display: "swap",
 });
 
@@ -71,18 +71,12 @@ export const metadata: Metadata = {
       "max-video-preview": -1,
     },
   },
-  icons: {
-    icon: [
-      { url: "/favicon.svg", type: "image/svg+xml" },
-      { url: "/icon.svg", type: "image/svg+xml" },
-    ],
-    apple: "/icon.svg",
-  },
+  // Ícones via convenção de arquivos (app/icon.png e app/apple-icon.png).
   manifest: "/manifest.webmanifest",
 };
 
 export const viewport: Viewport = {
-  themeColor: "#0B1120",
+  themeColor: "#1C140E",
   width: "device-width",
   initialScale: 1,
 };
@@ -91,7 +85,7 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="pt-BR" className={`${spectral.variable} ${hanken.variable}`}>
+    <html lang="pt-BR" className={`${cormorant.variable} ${hanken.variable}`}>
       <body>
         <JsonLd data={[organizationJsonLd(), websiteJsonLd()]} />
         {children}

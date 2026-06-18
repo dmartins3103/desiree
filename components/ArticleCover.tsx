@@ -4,9 +4,9 @@
  * Consistente com a identidade: marinho + dourado, tipografia serifada.
  */
 const glows = [
-  "radial-gradient(circle at 80% 15%,rgba(212,175,55,.18) 0%,rgba(212,175,55,0) 55%)",
-  "radial-gradient(circle at 20% 80%,rgba(212,175,55,.16) 0%,rgba(212,175,55,0) 55%)",
-  "radial-gradient(circle at 85% 85%,rgba(212,175,55,.16) 0%,rgba(212,175,55,0) 55%)",
+  "radial-gradient(circle at 80% 15%,rgba(168,134,46,.18) 0%,rgba(168,134,46,0) 55%)",
+  "radial-gradient(circle at 20% 80%,rgba(168,134,46,.16) 0%,rgba(168,134,46,0) 55%)",
+  "radial-gradient(circle at 85% 85%,rgba(168,134,46,.16) 0%,rgba(168,134,46,0) 55%)",
 ];
 
 export default function ArticleCover({

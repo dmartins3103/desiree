@@ -1,19 +1,23 @@
 @import "tailwindcss";
 
 @theme {
-  --color-night: #0b1120;
-  --color-darknight: #080d18;
-  --color-ink: #0f172a;
-  --color-gold: #d4af37;
-  --color-gold-light: #e5c76b;
-  --color-gold-dark: #94772a;
-  --color-mist: #aebace;
-  --color-mist-soft: #cbd5e1;
-  --color-slate-muted: #8d9bb3;
-  --color-line-soft: #e4e8f0;
-  --color-cloud: #f5f7fa;
+  /* Paleta da identidade visual oficial (manual de marca) — quente e sóbria. */
+  --color-night: #1c140e; /* café profundo (CTAs, texto sobre dourado) */
+  --color-darknight: #14100b; /* café mais escuro (rodapé) */
+  --color-ink: #221a14; /* Café Escuro — fundos de contraste e títulos */
+  --color-gold: #a8862e; /* Ouro Antigo — cor de marca */
+  --color-gold-light: #c9a24a; /* Champagne — dourado claro p/ fundos escuros */
+  --color-gold-dark: #8a6d24; /* dourado mais escuro p/ rótulos sobre claro */
+  --color-mist: #c9b79a; /* texto suave sobre fundos escuros */
+  --color-mist-soft: #d8cbb6; /* links/realces sobre escuro */
+  --color-slate-muted: #b7a48e; /* taupe claro — apoio sobre escuro */
+  --color-line-soft: #e6dfd4; /* divisórias sobre claro */
+  --color-cloud: #f0efeb; /* Pergaminho — fundo claro alternativo */
+  --color-sand: #fbfaf7; /* Areia — fundo claro */
+  --color-espresso: #5e4435; /* Espresso — texto principal sobre claro */
+  --color-taupe: #8e745d; /* Taupe — texto secundário */
 
-  --font-serif: var(--font-spectral), Georgia, serif;
+  --font-serif: var(--font-cormorant), Georgia, serif;
   --font-sans: var(--font-hanken), system-ui, sans-serif;
 }
 
@@ -28,16 +32,16 @@ html {
 
 body {
   margin: 0;
-  background: #fff;
-  color: #0f172a;
+  background: #fbfaf7;
+  color: #5e4435;
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
 }
 
 ::selection {
-  background: #d4af37;
-  color: #0b1120;
+  background: #a8862e;
+  color: #f0efeb;
 }
 
 /* Reveal on scroll */
@@ -72,7 +76,7 @@ details > summary::-webkit-details-marker {
   display: none;
 }
 details[open] > summary .faq-mark {
-  background: #d4af37;
-  color: #0b1120;
-  border-color: #d4af37;
+  background: #a8862e;
+  color: #f0efeb;
+  border-color: #a8862e;
 }

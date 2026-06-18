@@ -1,5 +1,5 @@
 export function ArrowRight({
-  color = "#0B1120",
+  color = "#1C140E",
   size = 16,
 }: {
   color?: string;
@@ -18,7 +18,7 @@ export function ArrowRight({
   );
 }
 
-export function Check({ color = "#D4AF37" }: { color?: string }) {
+export function Check({ color = "#A8862E" }: { color?: string }) {
   return (
     <svg
       style={{ flex: "none", marginTop: 2 }}
@@ -42,10 +42,10 @@ export function Check({ color = "#D4AF37" }: { color?: string }) {
 export function CheckCircle() {
   return (
     <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true">
-      <circle cx="11" cy="11" r="10" stroke="#D4AF37" strokeWidth="1.2" />
+      <circle cx="11" cy="11" r="10" stroke="#A8862E" strokeWidth="1.2" />
       <path
         d="M6.5 11.2l3 3 6-6.5"
-        stroke="#D4AF37"
+        stroke="#A8862E"
         strokeWidth="1.6"
         strokeLinecap="round"
         strokeLinejoin="round"

@@ -29,7 +29,7 @@ export default async function OgImage({
           display: "flex",
           flexDirection: "column",
           justifyContent: "space-between",
-          background: "#0F172A",
+          background: "#221A14",
           padding: "72px 80px",
           fontFamily: "Georgia, serif",
         }}
@@ -43,12 +43,12 @@ export default async function OgImage({
             fontFamily: "sans-serif",
           }}
         >
-          <span style={{ color: "#FFFFFF", fontSize: 22, letterSpacing: 6 }}>
+          <span style={{ color: "#F4F1EA", fontSize: 22, letterSpacing: 6 }}>
             DESIRÉE PARADA
           </span>
           <span
             style={{
-              color: "#D4AF37",
+              color: "#A8862E",
               fontSize: 16,
               letterSpacing: 4,
               textTransform: "uppercase",
@@ -60,10 +60,10 @@ export default async function OgImage({
 
         {/* título */}
         <div style={{ display: "flex", flexDirection: "column" }}>
-          <div style={{ width: 56, height: 3, background: "#D4AF37", marginBottom: 28 }} />
+          <div style={{ width: 56, height: 3, background: "#A8862E", marginBottom: 28 }} />
           <div
             style={{
-              color: "#FFFFFF",
+              color: "#F4F1EA",
               fontSize: title.length > 70 ? 50 : 60,
               lineHeight: 1.12,
               maxWidth: 1000,
@@ -76,7 +76,7 @@ export default async function OgImage({
         {/* rodapé */}
         <div
           style={{
-            color: "#AEBACE",
+            color: "#C9B79A",
             fontSize: 22,
             letterSpacing: 3,
             textTransform: "uppercase",

@@ -35,7 +35,7 @@ export default function Home() {
             className="pointer-events-none absolute -right-40 -top-44 h-[540px] w-[540px] rounded-full"
             style={{
               background:
-                "radial-gradient(circle,rgba(212,175,55,.10) 0%,rgba(212,175,55,0) 70%)",
+                "radial-gradient(circle,rgba(168,134,46,.10) 0%,rgba(168,134,46,0) 70%)",
             }}
           />
           <div className="relative mx-auto max-w-[1200px]">
@@ -108,7 +108,7 @@ export default function Home() {
                       Método PEG{pegMark}
                     </span>
                   </div>
-                  <p className="m-0 text-sm font-medium leading-[1.45] text-[#475569]">
+                  <p className="m-0 text-sm font-medium leading-[1.45] text-[#6E5547]">
                     Proteção · Estruturação · Governança
                   </p>
                 </div>
@@ -128,12 +128,12 @@ export default function Home() {
                 </h2>
               </div>
               <div className="pt-2">
-                <p className="m-0 mb-[22px] text-lg leading-[1.66] text-[#475569]">
+                <p className="m-0 mb-[22px] text-lg leading-[1.66] text-[#6E5547]">
                   Empresas modernas precisam lidar com novas exigências regulatórias, riscos
                   psicossociais, governança corporativa, proteção patrimonial e sucessão
                   empresarial.
                 </p>
-                <p className="m-0 text-lg leading-[1.66] text-[#475569]">
+                <p className="m-0 text-lg leading-[1.66] text-[#6E5547]">
                   Nossa atuação combina visão jurídica, estratégia empresarial e prevenção de
                   passivos — transformando complexidade em estrutura, previsibilidade e proteção.
                 </p>
@@ -167,7 +167,7 @@ export default function Home() {
                 >
                   <div className="mb-5 flex items-center justify-between">
                     <span className="font-serif text-[22px] text-gold">{r.n}</span>
-                    <span className="rounded-[2px] border border-white/[0.14] px-2.5 py-[5px] text-[10.5px] font-semibold uppercase tracking-[0.16em] text-[#7E8DA6]">
+                    <span className="rounded-[2px] border border-white/[0.14] px-2.5 py-[5px] text-[10.5px] font-semibold uppercase tracking-[0.16em] text-[#B7A48E]">
                       {r.tag}
                     </span>
                   </div>
@@ -212,19 +212,19 @@ export default function Home() {
                 <Reveal
                   key={a.n}
                   as="article"
-                  className="rounded-[3px] border border-line-soft bg-white p-10 transition-[box-shadow,transform] hover:-translate-y-[3px] hover:shadow-[0_20px_50px_rgba(15,23,42,.10)]"
+                  className="rounded-[3px] border border-line-soft bg-white p-10 transition-[box-shadow,transform] hover:-translate-y-[3px] hover:shadow-[0_20px_50px_rgba(94,68,53,.10)]"
                 >
                   <span className="font-serif text-lg font-medium text-gold">{a.n}</span>
                   <h3 className="m-0 mb-3.5 mt-3.5 font-serif text-[25px] font-medium leading-[1.2] text-ink">
                     {a.title}
                   </h3>
-                  <p className="m-0 mb-6 text-[15.5px] leading-[1.6] text-[#5A6678]">{a.desc}</p>
-                  <div className="mb-[22px] h-px bg-[#EBEEF4]" />
+                  <p className="m-0 mb-6 text-[15.5px] leading-[1.6] text-[#7A6353]">{a.desc}</p>
+                  <div className="mb-[22px] h-px bg-[#ECE6DB]" />
                   <ul className="m-0 grid list-none grid-cols-1 gap-x-5 gap-y-3 p-0 sm:grid-cols-2">
                     {a.services.map((s) => (
                       <li
                         key={s}
-                        className="flex items-start gap-2.5 text-sm font-medium leading-[1.4] text-[#33405A]"
+                        className="flex items-start gap-2.5 text-sm font-medium leading-[1.4] text-[#5E4435]"
                       >
                         <Check />
                         <span>{s}</span>
@@ -248,7 +248,7 @@ export default function Home() {
             className="pointer-events-none absolute left-1/2 top-1/2 h-[760px] w-[760px] -translate-x-1/2 -translate-y-1/2 rounded-full"
             style={{
               background:
-                "radial-gradient(circle,rgba(212,175,55,.07) 0%,rgba(212,175,55,0) 68%)",
+                "radial-gradient(circle,rgba(168,134,46,.07) 0%,rgba(168,134,46,0) 68%)",
             }}
           />
           <div className="relative mx-auto max-w-[1200px]">
@@ -303,7 +303,7 @@ export default function Home() {
                     </h3>
                     <p
                       className={`m-0 text-[15px] leading-[1.6] ${
-                        step.highlight ? "text-[#C9D3E2]" : "text-mist"
+                        step.highlight ? "text-[#D8CBB6]" : "text-mist"
                       }`}
                     >
                       {step.d}
@@ -314,7 +314,7 @@ export default function Home() {
                       <svg width="40" height="16" viewBox="0 0 40 16" fill="none" aria-hidden="true">
                         <path
                           d="M0 8h34M30 3l5 5-5 5"
-                          stroke="#D4AF37"
+                          stroke="#A8862E"
                           strokeWidth="1.4"
                           strokeLinecap="round"
                           strokeLinejoin="round"
@@ -345,10 +345,10 @@ export default function Home() {
               {benefits.map((b) => (
                 <div
                   key={b}
-                  className="flex flex-col gap-3.5 rounded-[3px] border border-[#EBEEF4] bg-cloud p-6"
+                  className="flex flex-col gap-3.5 rounded-[3px] border border-[#ECE6DB] bg-cloud p-6"
                 >
                   <CheckCircle />
-                  <span className="text-[15.5px] font-semibold leading-[1.4] text-[#1E293B]">
+                  <span className="text-[15.5px] font-semibold leading-[1.4] text-[#4A3528]">
                     {b}
                   </span>
                 </div>
@@ -366,7 +366,7 @@ export default function Home() {
           <div className="mx-auto max-w-[1200px]">
             <div className="grid grid-cols-1 items-start gap-12 lg:grid-cols-[0.85fr_1.15fr] lg:gap-[72px]">
               <Reveal className="relative">
-                <div className="relative aspect-[3/4] overflow-hidden rounded-[3px] border border-[#DEE3ED]">
+                <div className="relative aspect-[3/4] overflow-hidden rounded-[3px] border border-[#E6DFD4]">
                   <Image
                     src="/fotos/retrato.jpg"
                     alt="Retrato de Desirée Parada"
@@ -382,11 +382,11 @@ export default function Home() {
                 <h2 className="m-0 mb-6 font-serif text-[clamp(30px,3.8vw,46px)] font-normal leading-[1.12] tracking-[-0.01em] text-ink">
                   Conheça Desirée Parada
                 </h2>
-                <p className="m-0 mb-[18px] text-[17.5px] leading-[1.66] text-[#475569]">
+                <p className="m-0 mb-[18px] text-[17.5px] leading-[1.66] text-[#6E5547]">
                   Desirée Parada atua na interseção entre Direito, Estratégia Empresarial e Proteção
                   Patrimonial.
                 </p>
-                <p className="m-0 mb-9 text-[17.5px] leading-[1.66] text-[#475569]">
+                <p className="m-0 mb-9 text-[17.5px] leading-[1.66] text-[#6E5547]">
                   Sua missão é ajudar empresas, gestores e famílias empresárias a construir
                   estruturas jurídicas sólidas, capazes de sustentar crescimento, reduzir riscos e
                   preservar patrimônio ao longo das gerações.
@@ -405,7 +405,7 @@ export default function Home() {
                           {c.value.map((v) => (
                             <li
                               key={v}
-                              className="flex items-start gap-2 text-sm leading-[1.5] text-[#5A6678]"
+                              className="flex items-start gap-2 text-sm leading-[1.5] text-[#7A6353]"
                             >
                               <span className="mt-[2px] text-gold-dark">·</span>
                               <span>{v}</span>
@@ -413,7 +413,7 @@ export default function Home() {
                           ))}
                         </ul>
                       ) : (
-                        <div className="text-sm leading-[1.5] text-[#5A6678]">{c.value}</div>
+                        <div className="text-sm leading-[1.5] text-[#7A6353]">{c.value}</div>
                       )}
                     </div>
                   ))}
@@ -442,7 +442,7 @@ export default function Home() {
                   <span aria-hidden="true" className="h-6 font-serif text-[54px] leading-[0.6] text-gold/45">
                     &ldquo;
                   </span>
-                  <blockquote className="m-0 flex-1 font-serif text-lg italic leading-[1.5] text-[#E2E8F0]">
+                  <blockquote className="m-0 flex-1 font-serif text-lg italic leading-[1.5] text-[#E9E2D6]">
                     {t.quote}
                   </blockquote>
                   <figcaption className="border-t border-white/10 pt-[18px]">
@@ -473,12 +473,12 @@ export default function Home() {
                 <details key={f.q} className="group border-b border-line-soft">
                   <summary className="flex items-center justify-between gap-5 py-6 font-serif text-xl font-medium text-ink">
                     <span>{f.q}</span>
-                    <span className="faq-mark flex h-[30px] w-[30px] flex-none items-center justify-center rounded-full border border-[#D9C7A0] text-lg leading-none text-gold-dark transition-colors">
+                    <span className="faq-mark flex h-[30px] w-[30px] flex-none items-center justify-center rounded-full border border-[#D9C29A] text-lg leading-none text-gold-dark transition-colors">
                       <span className="group-open:hidden">+</span>
                       <span className="hidden group-open:inline">–</span>
                     </span>
                   </summary>
-                  <p className="m-0 mb-[26px] max-w-[760px] text-base leading-[1.65] text-[#5A6678]">
+                  <p className="m-0 mb-[26px] max-w-[760px] text-base leading-[1.65] text-[#7A6353]">
                     {f.a}
                   </p>
                 </details>
@@ -498,7 +498,7 @@ export default function Home() {
             className="pointer-events-none absolute -top-[200px] left-1/2 h-[700px] w-[700px] -translate-x-1/2 rounded-full"
             style={{
               background:
-                "radial-gradient(circle,rgba(212,175,55,.12) 0%,rgba(212,175,55,0) 66%)",
+                "radial-gradient(circle,rgba(168,134,46,.12) 0%,rgba(168,134,46,0) 66%)",
             }}
           />
           <Reveal className="relative mx-auto max-w-[820px] text-center">
@@ -553,14 +553,14 @@ export default function Home() {
                 className="inline-flex items-center gap-2 text-[13.5px] font-bold text-gold-dark no-underline hover:text-gold"
               >
                 Ver todos os artigos
-                <ArrowRight color="#94772A" size={14} />
+                <ArrowRight color="#8A6D24" size={14} />
               </Link>
             </Reveal>
             <Reveal className="mb-10 flex flex-wrap gap-2.5">
               {categories.map((cat) => (
                 <span
                   key={cat}
-                  className="rounded-[2px] border border-line-soft bg-white px-4 py-[9px] text-[13px] font-semibold text-[#475569]"
+                  className="rounded-[2px] border border-line-soft bg-white px-4 py-[9px] text-[13px] font-semibold text-[#6E5547]"
                 >
                   {cat}
                 </span>
@@ -571,7 +571,7 @@ export default function Home() {
                 <Link
                   key={p.slug}
                   href={`/blog/${p.slug}`}
-                  className="flex flex-col overflow-hidden rounded-[3px] border border-line-soft bg-white no-underline transition-[box-shadow,transform] hover:-translate-y-[3px] hover:shadow-[0_20px_50px_rgba(15,23,42,.10)]"
+                  className="flex flex-col overflow-hidden rounded-[3px] border border-line-soft bg-white no-underline transition-[box-shadow,transform] hover:-translate-y-[3px] hover:shadow-[0_20px_50px_rgba(94,68,53,.10)]"
                 >
                   <div className="relative aspect-[16/10] [container-type:inline-size]">
                     <ArticleCover cat={p.cat} index={i} />
@@ -583,12 +583,12 @@ export default function Home() {
                     <h3 className="m-0 font-serif text-[21px] font-medium leading-[1.26] text-ink">
                       {p.title}
                     </h3>
-                    <p className="m-0 flex-1 text-[14.5px] leading-[1.55] text-[#5A6678]">
+                    <p className="m-0 flex-1 text-[14.5px] leading-[1.55] text-[#7A6353]">
                       {p.excerpt}
                     </p>
                     <span className="mt-1 inline-flex items-center gap-2 text-[13.5px] font-bold text-gold-dark">
                       Ler artigo
-                      <ArrowRight color="#94772A" size={14} />
+                      <ArrowRight color="#8A6D24" size={14} />
                     </span>
                   </div>
                 </Link>

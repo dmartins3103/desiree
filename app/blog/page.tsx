@@ -63,7 +63,7 @@ export default function BlogIndex() {
               {categories.map((cat) => (
                 <span
                   key={cat}
-                  className="rounded-[2px] border border-line-soft bg-white px-4 py-[9px] text-[13px] font-semibold text-[#475569]"
+                  className="rounded-[2px] border border-line-soft bg-white px-4 py-[9px] text-[13px] font-semibold text-[#6E5547]"
                 >
                   {cat}
                 </span>
@@ -74,7 +74,7 @@ export default function BlogIndex() {
                 <Reveal
                   key={p.slug}
                   as="article"
-                  className="flex h-full flex-col overflow-hidden rounded-[3px] border border-line-soft bg-white transition-[box-shadow,transform] hover:-translate-y-[3px] hover:shadow-[0_20px_50px_rgba(15,23,42,.10)]"
+                  className="flex h-full flex-col overflow-hidden rounded-[3px] border border-line-soft bg-white transition-[box-shadow,transform] hover:-translate-y-[3px] hover:shadow-[0_20px_50px_rgba(94,68,53,.10)]"
                 >
                   <Link href={`/blog/${p.slug}`} className="flex h-full flex-col no-underline">
                     <div className="relative aspect-[16/10] [container-type:inline-size]">
@@ -84,19 +84,19 @@ export default function BlogIndex() {
                       <div className="flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.14em] text-gold-dark">
                         <span>{p.cat}</span>
                         <span className="text-line-soft">·</span>
-                        <time dateTime={p.date} className="font-semibold text-[#94A3B8]">
+                        <time dateTime={p.date} className="font-semibold text-[#A89079]">
                           {dateFmt.format(new Date(p.date))}
                         </time>
                       </div>
                       <h2 className="m-0 font-serif text-[21px] font-medium leading-[1.26] text-ink">
                         {p.title}
                       </h2>
-                      <p className="m-0 flex-1 text-[14.5px] leading-[1.55] text-[#5A6678]">
+                      <p className="m-0 flex-1 text-[14.5px] leading-[1.55] text-[#7A6353]">
                         {p.excerpt}
                       </p>
                       <span className="mt-1 inline-flex items-center gap-2 text-[13.5px] font-bold text-gold-dark">
                         Ler artigo
-                        <ArrowRight color="#94772A" size={14} />
+                        <ArrowRight color="#8A6D24" size={14} />
                       </span>
                     </div>
                   </Link>

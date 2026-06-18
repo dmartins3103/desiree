@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { addressLine1, addressLine2, mapsUrl, pegMark, site, whatsappUrl } from "@/lib/site";
 
 const footerNav = [
@@ -14,10 +15,14 @@ export default function Footer() {
       <div className="mx-auto max-w-[1200px]">
         <div className="grid grid-cols-1 gap-12 border-b border-white/10 pb-12 md:grid-cols-[1.4fr_1fr_1fr]">
           <div>
-            <div className="mb-2.5 font-serif text-[21px] font-medium tracking-[0.2em] text-white">
-              DESIRÉE PARADA
-            </div>
-            <div className="mb-[22px] text-[11px] font-semibold uppercase tracking-[0.3em] text-gold">
+            <Image
+              src="/marca/logo-cream.png"
+              alt="Desirée Parada — Advocacia & Consultoria"
+              width={240}
+              height={156}
+              className="mb-2 h-auto w-[200px]"
+            />
+            <div className="mb-[22px] text-[11px] font-semibold uppercase tracking-[0.3em] text-gold-light">
               Estratégia Jurídica Empresarial
             </div>
             <p className="m-0 max-w-[340px] text-[15px] leading-[1.6] text-slate-muted">
@@ -26,7 +31,7 @@ export default function Footer() {
             </p>
           </div>
           <div>
-            <div className="mb-5 text-xs font-bold uppercase tracking-[0.14em] text-[#6B7A93]">
+            <div className="mb-5 text-xs font-bold uppercase tracking-[0.14em] text-[#A89079]">
               Contato
             </div>
             <div className="flex flex-col gap-3.5">
@@ -39,10 +44,24 @@ export default function Footer() {
                 WhatsApp · {site.phoneDisplay}
               </a>
               <a
+                href={`tel:${site.landlineE164}`}
+                className="text-[15px] text-mist-soft no-underline hover:text-gold"
+              >
+                Tel · {site.landlineDisplay}
+              </a>
+              <a
                 href={`mailto:${site.email}`}
                 className="text-[15px] text-mist-soft no-underline hover:text-gold"
               >
                 {site.email}
+              </a>
+              <a
+                href={site.instagramUrl}
+                target="_blank"
+                rel="noopener"
+                className="text-[15px] text-mist-soft no-underline hover:text-gold"
+              >
+                {site.instagramHandle}
               </a>
               <a
                 href={mapsUrl}
@@ -60,10 +79,10 @@ export default function Footer() {
                 >
                   <path
                     d="M8 1.5c-2.5 0-4.5 2-4.5 4.5C3.5 9.5 8 14.5 8 14.5s4.5-5 4.5-8.5C12.5 3.5 10.5 1.5 8 1.5Z"
-                    stroke="#D4AF37"
+                    stroke="#A8862E"
                     strokeWidth="1.3"
                   />
-                  <circle cx="8" cy="6" r="1.6" stroke="#D4AF37" strokeWidth="1.3" />
+                  <circle cx="8" cy="6" r="1.6" stroke="#A8862E" strokeWidth="1.3" />
                 </svg>
                 <address className="text-[15px] not-italic leading-[1.5] text-mist-soft group-hover:text-gold">
                   {addressLine1}
@@ -74,7 +93,7 @@ export default function Footer() {
             </div>
           </div>
           <div>
-            <div className="mb-5 text-xs font-bold uppercase tracking-[0.14em] text-[#6B7A93]">
+            <div className="mb-5 text-xs font-bold uppercase tracking-[0.14em] text-[#A89079]">
               Navegação
             </div>
             <div className="flex flex-col gap-3">
@@ -90,16 +109,16 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <p className="m-0 mt-7 max-w-[900px] text-xs leading-[1.7] text-[#5A6880]">
+        <p className="m-0 mt-7 max-w-[900px] text-xs leading-[1.7] text-[#8E745D]">
           Direito Empresarial · Compliance · Governança Corporativa · NR-1 · Riscos Psicossociais ·
           Holding Familiar · Holding Patrimonial · Planejamento Sucessório · Proteção Patrimonial ·
           LGPD
         </p>
         <div className="mt-6 flex flex-wrap justify-between gap-3">
-          <span className="text-[13px] text-[#5A6880]">
+          <span className="text-[13px] text-[#8E745D]">
             © {new Date().getFullYear()} {site.name}. Todos os direitos reservados.
           </span>
-          <span className="text-[13px] text-[#5A6880]">Consultoria jurídica estratégica</span>
+          <span className="text-[13px] text-[#8E745D]">Consultoria jurídica estratégica</span>
         </div>
       </div>
     </footer>

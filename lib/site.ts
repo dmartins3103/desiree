@@ -13,11 +13,15 @@ export const site = {
   description:
     "Assessoria jurídica estratégica para empresas e famílias empresárias: NR-1, compliance, governança, holding familiar e sucessão. Agende seu diagnóstico.",
   email: "desiree@morisakieparada.com.br",
-  phoneDisplay: "(21) 97596-9696",
+  phoneDisplay: "(21) 97596-6969",
   phoneE164: "+5521975966969",
+  landlineDisplay: "(21) 3596-9162",
+  landlineE164: "+552135969162",
   whatsappNumber: "5521975966969",
   whatsappMessage:
     "Olá Desirée, gostaria de agendar um diagnóstico estratégico.",
+  instagramHandle: "@desireeparada.adv",
+  instagramUrl: "https://instagram.com/desireeparada.adv",
   areaServed: "Brasil",
   pegRegistered: true,
   address: {

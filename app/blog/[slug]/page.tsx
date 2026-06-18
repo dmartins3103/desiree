@@ -104,7 +104,7 @@ export default async function ArticlePage({
           {/* Capa */}
           <div className="bg-white px-6">
             <div className="mx-auto -mt-12 max-w-[920px]">
-              <div className="relative aspect-[16/9] overflow-hidden rounded-[3px] border border-line-soft shadow-[0_24px_60px_rgba(8,13,24,.35)] [container-type:inline-size]">
+              <div className="relative aspect-[16/9] overflow-hidden rounded-[3px] border border-line-soft shadow-[0_24px_60px_rgba(34,26,20,.35)] [container-type:inline-size]">
                 <ArticleCover cat={post.cat} index={postIndex} />
               </div>
             </div>
@@ -120,7 +120,7 @@ export default async function ArticlePage({
                 <h2 className="m-0 mb-3 font-serif text-[26px] font-medium leading-[1.2] text-ink">
                   Quer aplicar isso na sua empresa?
                 </h2>
-                <p className="m-0 mb-6 text-base leading-[1.6] text-[#5A6678]">
+                <p className="m-0 mb-6 text-base leading-[1.6] text-[#7A6353]">
                   Agende um diagnóstico estratégico e receba um plano claro e priorizado para
                   reduzir riscos e proteger seu patrimônio.
                 </p>
@@ -150,7 +150,7 @@ export default async function ArticlePage({
                   <Link
                     key={p.slug}
                     href={`/blog/${p.slug}`}
-                    className="flex flex-col gap-3 rounded-[3px] border border-line-soft bg-white p-7 no-underline transition-[box-shadow,transform] hover:-translate-y-[3px] hover:shadow-[0_20px_50px_rgba(15,23,42,.10)]"
+                    className="flex flex-col gap-3 rounded-[3px] border border-line-soft bg-white p-7 no-underline transition-[box-shadow,transform] hover:-translate-y-[3px] hover:shadow-[0_20px_50px_rgba(94,68,53,.10)]"
                   >
                     <span className="text-[11px] font-bold uppercase tracking-[0.14em] text-gold-dark">
                       {p.cat}
@@ -158,7 +158,7 @@ export default async function ArticlePage({
                     <h3 className="m-0 font-serif text-[20px] font-medium leading-[1.26] text-ink">
                       {p.title}
                     </h3>
-                    <p className="m-0 text-[14.5px] leading-[1.55] text-[#5A6678]">{p.excerpt}</p>
+                    <p className="m-0 text-[14.5px] leading-[1.55] text-[#7A6353]">{p.excerpt}</p>
                   </Link>
                 ))}
               </div>

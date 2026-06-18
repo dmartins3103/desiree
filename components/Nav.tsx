@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import { nav, whatsappUrl } from "@/lib/site";
 
@@ -19,18 +20,28 @@ export default function Nav() {
     <header
       className="fixed inset-x-0 top-0 z-[60] transition-[background,backdrop-filter,border-color] duration-300"
       style={{
-        background: scrolled ? "rgba(11,17,32,.88)" : "rgba(11,17,32,0)",
+        background: scrolled ? "rgba(34,26,20,.88)" : "rgba(34,26,20,0)",
         backdropFilter: scrolled ? "blur(12px)" : "blur(0)",
         borderBottom: `1px solid ${scrolled ? "rgba(255,255,255,.10)" : "rgba(255,255,255,0)"}`,
       }}
     >
       <div className="mx-auto flex max-w-[1200px] items-center justify-between gap-6 px-6 py-4">
-        <Link href="/#top" className="flex flex-none flex-col leading-none no-underline">
-          <span className="font-serif text-[19px] font-medium tracking-[0.2em] text-white">
-            DESIRÉE PARADA
-          </span>
-          <span className="mt-[7px] text-[9px] font-semibold uppercase tracking-[0.34em] text-gold">
-            Estratégia Jurídica Empresarial
+        <Link href="/#top" className="flex flex-none items-center gap-3 no-underline">
+          <Image
+            src="/marca/monogram-cream.png"
+            alt=""
+            width={34}
+            height={34}
+            className="h-[34px] w-auto"
+            priority
+          />
+          <span className="flex flex-col leading-none">
+            <span className="font-serif text-[19px] font-medium tracking-[0.2em] text-cream">
+              DESIRÉE PARADA
+            </span>
+            <span className="mt-[7px] text-[9px] font-semibold uppercase tracking-[0.34em] text-gold-light">
+              Estratégia Jurídica Empresarial
+            </span>
           </span>
         </Link>
 
@@ -77,13 +88,13 @@ export default function Nav() {
       </div>
 
       {open && (
-        <div className="flex flex-col gap-1 border-t border-white/10 bg-[rgba(11,17,32,.97)] px-6 pb-[22px] pt-3.5 backdrop-blur-xl lg:hidden">
+        <div className="flex flex-col gap-1 border-t border-white/10 bg-[rgba(34,26,20,.97)] px-6 pb-[22px] pt-3.5 backdrop-blur-xl lg:hidden">
           {nav.map((item) => (
             <Link
               key={item.href}
               href={item.href}
               onClick={() => setOpen(false)}
-              className="border-b border-white/[0.07] py-3 text-base font-medium text-[#E2E8F0] no-underline"
+              className="border-b border-white/[0.07] py-3 text-base font-medium text-[#E9E2D6] no-underline"
             >
               {item.label}
             </Link>

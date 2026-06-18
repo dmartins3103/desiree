@@ -52,7 +52,7 @@ export default function ArticleBody({ body }: { body: string[] }) {
           return (
             <p
               key={i}
-              className="m-0 mb-6 mt-10 border-t border-line-soft pt-6 text-sm italic leading-[1.6] text-[#7C879A]"
+              className="m-0 mb-6 mt-10 border-t border-line-soft pt-6 text-sm italic leading-[1.6] text-[#8E745D]"
             >
               {block.slice(1, -1)}
             </p>
@@ -75,7 +75,7 @@ export default function ArticleBody({ body }: { body: string[] }) {
               {items.map((it, j) => (
                 <li
                   key={j}
-                  className="flex items-start gap-3 text-[17px] leading-[1.7] text-[#33405A]"
+                  className="flex items-start gap-3 text-[17px] leading-[1.7] text-[#5E4435]"
                 >
                   <svg
                     className="mt-[7px] flex-none"
@@ -87,7 +87,7 @@ export default function ArticleBody({ body }: { body: string[] }) {
                   >
                     <path
                       d="M3 8.5l3 3 7-7.5"
-                      stroke="#94772A"
+                      stroke="#8A6D24"
                       strokeWidth="1.8"
                       strokeLinecap="round"
                       strokeLinejoin="round"
@@ -100,7 +100,7 @@ export default function ArticleBody({ body }: { body: string[] }) {
           );
         }
         return (
-          <p key={i} className="m-0 mb-6 text-[17.5px] leading-[1.75] text-[#33405A]">
+          <p key={i} className="m-0 mb-6 text-[17.5px] leading-[1.75] text-[#5E4435]">
             {renderInline(block)}
           </p>
         );

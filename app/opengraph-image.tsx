@@ -15,7 +15,7 @@ export default function OgImage() {
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
-          background: "#0F172A",
+          background: "#221A14",
           padding: "80px",
           fontFamily: "Georgia, serif",
         }}
@@ -28,10 +28,10 @@ export default function OgImage() {
             marginBottom: 28,
           }}
         >
-          <div style={{ width: 40, height: 3, background: "#D4AF37" }} />
+          <div style={{ width: 40, height: 3, background: "#A8862E" }} />
           <div
             style={{
-              color: "#D4AF37",
+              color: "#A8862E",
               fontSize: 22,
               letterSpacing: 6,
               textTransform: "uppercase",
@@ -43,7 +43,7 @@ export default function OgImage() {
         </div>
         <div
           style={{
-            color: "#FFFFFF",
+            color: "#F4F1EA",
             fontSize: 70,
             lineHeight: 1.1,
             letterSpacing: 8,
@@ -54,7 +54,7 @@ export default function OgImage() {
         </div>
         <div
           style={{
-            color: "#AEBACE",
+            color: "#C9B79A",
             fontSize: 30,
             lineHeight: 1.4,
             maxWidth: 900,
