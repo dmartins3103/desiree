@@ -241,7 +241,7 @@ export default function Home() {
         <section
           id="metodo"
           aria-label="Método PEG"
-          className="relative scroll-mt-20 overflow-hidden bg-espresso px-6 py-[clamp(80px,9vw,128px)] text-cream"
+          className="relative scroll-mt-20 overflow-hidden bg-ink px-6 py-[clamp(80px,9vw,128px)] text-cream"
         >
           <div
             aria-hidden="true"
@@ -424,7 +424,7 @@ export default function Home() {
         </section>
 
         {/* ===================== DEPOIMENTOS ===================== */}
-        <section aria-label="Depoimentos" className="bg-espresso px-6 py-[clamp(80px,9vw,128px)] text-cream">
+        <section aria-label="Depoimentos" className="bg-ink px-6 py-[clamp(80px,9vw,128px)] text-cream">
           <div className="mx-auto max-w-[1200px]">
             <Reveal className="mb-14 max-w-[680px]">
               <Eyebrow tone="light">Confiança</Eyebrow>
