@@ -391,13 +391,30 @@ export default function Home() {
                   estruturas jurídicas sólidas, capazes de sustentar crescimento, reduzir riscos e
                   preservar patrimônio ao longo das gerações.
                 </p>
-                <div className="grid grid-cols-1 gap-px overflow-hidden rounded-[3px] border border-line-soft bg-line-soft sm:grid-cols-2">
-                  {credentials.map((c) => (
-                    <div key={c.label} className="bg-white px-6 py-[22px]">
+                <div className="overflow-hidden rounded-[3px] border border-line-soft">
+                  {credentials.map((c, i) => (
+                    <div
+                      key={c.label}
+                      className={`bg-white px-6 py-5 ${i > 0 ? "border-t border-line-soft" : ""}`}
+                    >
                       <div className="mb-2 text-[11px] font-bold uppercase tracking-[0.14em] text-gold-dark">
                         {c.label}
                       </div>
-                      <div className="text-sm leading-[1.5] text-[#5A6678]">{c.value}</div>
+                      {Array.isArray(c.value) ? (
+                        <ul className="m-0 flex list-none flex-col gap-1.5 p-0">
+                          {c.value.map((v) => (
+                            <li
+                              key={v}
+                              className="flex items-start gap-2 text-sm leading-[1.5] text-[#5A6678]"
+                            >
+                              <span className="mt-[2px] text-gold-dark">·</span>
+                              <span>{v}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      ) : (
+                        <div className="text-sm leading-[1.5] text-[#5A6678]">{c.value}</div>
+                      )}
                     </div>
                   ))}
                 </div>

@@ -128,15 +128,28 @@ export const benefits: string[] = [
   "Mais previsibilidade para crescer",
 ];
 
-export type Credential = { label: string; value: string };
+export type Credential = { label: string; value: string | string[] };
 
 export const credentials: Credential[] = [
-  { label: "Formação Acadêmica", value: "Espaço reservado para graduação e instituição." },
-  { label: "Especializações", value: "Pós-graduações e áreas de especialização." },
-  { label: "Certificações", value: "Certificações profissionais relevantes." },
-  { label: "Publicações", value: "Artigos, e-books e materiais autorais." },
-  { label: "Palestras", value: "Eventos, painéis e palestras realizadas." },
-  { label: "Atuação", value: "Participações e reconhecimentos de mercado." },
+  {
+    label: "Formação Acadêmica",
+    value:
+      "Graduação em Direito (2010) — Universidade Cândido Mendes, Rio de Janeiro.",
+  },
+  {
+    label: "Especializações",
+    value: [
+      "MBA em Direito Tributário — FGV",
+      "MBA em Holding — EBPÓS",
+      "Especialização em Compliance — FGV",
+      "Especialização em Contratos",
+      "Extensão em Planejamento Patrimonial, Sucessório e Holding",
+    ],
+  },
+  {
+    label: "Certificações",
+    value: "Membro do Tribunal de Ética e Disciplina da OAB desde 2020.",
+  },
 ];
 
 export type Testimonial = { quote: string; role: string; org: string };

@@ -9,8 +9,9 @@ export const site = {
   // URL canônica de produção (sem barra final).
   url: "https://desiree-chi.vercel.app",
   locale: "pt_BR",
+  // Meta description do Google (ideal ≤ ~155 caracteres, persuasiva e com palavras-chave).
   description:
-    "Assessoria jurídica estratégica em Direito Empresarial, Compliance, Governança Corporativa, NR-1, riscos psicossociais, holding familiar e patrimonial e planejamento sucessório.",
+    "Assessoria jurídica estratégica para empresas e famílias empresárias: NR-1, compliance, governança, holding familiar e sucessão. Agende seu diagnóstico.",
   email: "desiree@morisakieparada.com.br",
   phoneDisplay: "(21) 97596-9696",
   phoneE164: "+5521975966969",

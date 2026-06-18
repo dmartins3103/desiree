@@ -24,6 +24,26 @@ export function organizationJsonLd() {
       jobTitle: "Advogada — Estratégia Jurídica Empresarial",
       image: `${site.url}/fotos/retrato.jpg`,
       worksFor: { "@id": `${site.url}/#organization` },
+      alumniOf: [
+        {
+          "@type": "CollegeOrUniversity",
+          name: "Universidade Cândido Mendes",
+        },
+        { "@type": "CollegeOrUniversity", name: "Fundação Getulio Vargas (FGV)" },
+      ],
+      memberOf: {
+        "@type": "Organization",
+        name: "Ordem dos Advogados do Brasil (OAB)",
+      },
+      hasCredential: [
+        "MBA em Direito Tributário (FGV)",
+        "MBA em Holding (EBPÓS)",
+        "Especialização em Compliance (FGV)",
+        "Especialização em Contratos",
+      ].map((c) => ({
+        "@type": "EducationalOccupationalCredential",
+        name: c,
+      })),
     },
     knowsAbout: [
       "Direito Empresarial",
