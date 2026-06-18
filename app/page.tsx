@@ -146,15 +146,15 @@ export default function Home() {
         <section
           id="riscos"
           aria-label="Mapa de Riscos"
-          className="scroll-mt-20 bg-white px-6 py-[clamp(80px,9vw,128px)] text-espresso"
+          className="scroll-mt-20 bg-ink px-6 py-[clamp(80px,9vw,128px)] text-cream"
         >
           <div className="mx-auto max-w-[1200px]">
             <Reveal className="mb-[60px] max-w-[760px]">
-              <Eyebrow>Mapa de Riscos</Eyebrow>
-              <h2 className="m-0 mb-5 font-serif text-[clamp(30px,3.8vw,48px)] font-normal leading-[1.12] tracking-[-0.01em] text-ink">
+              <Eyebrow tone="light">Mapa de Riscos</Eyebrow>
+              <h2 className="m-0 mb-5 font-serif text-[clamp(30px,3.8vw,48px)] font-normal leading-[1.12] tracking-[-0.01em] text-cream">
                 Sua empresa está preparada para os riscos de hoje?
               </h2>
-              <p className="m-0 text-lg leading-[1.6] text-[#6E5547]">
+              <p className="m-0 text-lg leading-[1.6] text-[#D8CBB6]">
                 Riscos invisíveis hoje tornam-se passivos caros amanhã. Cada frente abaixo gera
                 impacto financeiro, operacional e jurídico.
               </p>
@@ -163,15 +163,15 @@ export default function Home() {
               {risks.map((r) => (
                 <Reveal
                   key={r.n}
-                  className="rounded-[3px] border border-line-soft bg-cloud p-7 transition-[box-shadow,border-color] hover:border-gold/50 hover:shadow-[0_16px_40px_rgba(94,68,53,.08)]"
+                  className="rounded-[3px] border border-white/10 bg-white/[0.04] p-7 transition-colors hover:border-gold/50 hover:bg-white/[0.06]"
                 >
                   <div className="mb-5 flex items-center justify-between">
-                    <span className="font-serif text-[22px] text-gold-dark">{r.n}</span>
-                    <span className="rounded-[2px] border border-espresso/15 px-2.5 py-[5px] text-[10.5px] font-semibold uppercase tracking-[0.16em] text-taupe">
+                    <span className="font-serif text-[22px] text-gold-light">{r.n}</span>
+                    <span className="rounded-[2px] border border-white/14 px-2.5 py-[5px] text-[10.5px] font-semibold uppercase tracking-[0.16em] text-[#B7A48E]">
                       {r.tag}
                     </span>
                   </div>
-                  <h3 className="m-0 mb-5 font-serif text-[21px] font-medium leading-[1.22] text-ink">
+                  <h3 className="m-0 mb-5 font-serif text-[21px] font-medium leading-[1.22] text-cream">
                     {r.title}
                   </h3>
                   <dl className="m-0 flex flex-col gap-3">
@@ -181,10 +181,10 @@ export default function Home() {
                       ["Jurídico", r.jur],
                     ].map(([label, val]) => (
                       <div key={label} className="flex gap-3">
-                        <dt className="w-[78px] flex-none pt-0.5 text-[11px] font-bold uppercase tracking-[0.08em] text-gold-dark">
+                        <dt className="w-[78px] flex-none pt-0.5 text-[11px] font-bold uppercase tracking-[0.08em] text-gold-light">
                           {label}
                         </dt>
-                        <dd className="m-0 text-[13.5px] leading-[1.5] text-[#6E5547]">{val}</dd>
+                        <dd className="m-0 text-[13.5px] leading-[1.5] text-[#D8CBB6]">{val}</dd>
                       </div>
                     ))}
                   </dl>
