@@ -20,7 +20,22 @@ export const site = {
     "Olá Desirée, gostaria de agendar um diagnóstico estratégico.",
   areaServed: "Brasil",
   pegRegistered: true,
+  address: {
+    street: "Av. das Américas, 3.500, Bl. 06, sala 409",
+    neighborhood: "Barra da Tijuca",
+    city: "Rio de Janeiro",
+    state: "RJ",
+    postalCode: "22640-102",
+    country: "BR",
+  },
 } as const;
+
+// Endereço formatado para exibição.
+export const addressLine1 = site.address.street;
+export const addressLine2 = `${site.address.neighborhood}, ${site.address.city} — ${site.address.state}, ${site.address.postalCode}`;
+export const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+  `${site.address.street}, ${site.address.neighborhood}, ${site.address.city} - ${site.address.state}, ${site.address.postalCode}`,
+)}`;
 
 export const whatsappUrl = `https://wa.me/${site.whatsappNumber}?text=${encodeURIComponent(
   site.whatsappMessage,

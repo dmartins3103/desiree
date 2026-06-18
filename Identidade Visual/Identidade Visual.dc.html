@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>Desirée Parada — Manual de Identidade Visual</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#F0EFEB;-webkit-font-smoothing:antialiased}
+::selection{background:#A8862E;color:#F0EFEB}
+@media(max-width:920px){
+ .two{grid-template-columns:1fr !important}
+ .logos-grid{grid-template-columns:1fr 1fr !important}
+ .pal-grid{grid-template-columns:1fr 1fr !important}
+ .apps-grid{grid-template-columns:1fr !important}
+ .nav-links{display:none !important}
+}
+@media(max-width:620px){
+ .logos-grid{grid-template-columns:1fr !important}
+ .pal-grid{grid-template-columns:1fr !important}
+ .dont-grid{grid-template-columns:1fr 1fr !important}
+}
+</style>
+</helmet>
+<div ref="{{ rootRef }}" id="top" data-screen-label="Manual de Marca" style="font-family:'Hanken Grotesk',system-ui,sans-serif;color:#5E4435;background:#F0EFEB;overflow-x:hidden">
+
+  <!-- NAV -->
+  <header data-nav style="position:fixed;top:0;left:0;right:0;z-index:60;background:rgba(240,239,235,0);border-bottom:1px solid rgba(94,68,53,0);transition:background .35s,backdrop-filter .35s,border-color .35s">
+    <div style="max-width:1180px;margin:0 auto;padding:14px 28px;display:flex;align-items:center;justify-content:space-between;gap:24px">
+      <div style="display:flex;align-items:center;gap:14px">
+        <img src="assets/monogram-gold.png" alt="DP" style="height:26px;width:auto;display:block">
+        <span style="font-size:11px;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:#A8862E">Manual de Marca</span>
+      </div>
+      <nav class="nav-links" style="display:flex;align-items:center;gap:28px">
+        <a href="#marca" style="text-decoration:none;color:#7A6353;font-size:13px;font-weight:600;letter-spacing:.04em">Marca</a>
+        <a href="#logos" style="text-decoration:none;color:#7A6353;font-size:13px;font-weight:600;letter-spacing:.04em">Logos</a>
+        <a href="#cores" style="text-decoration:none;color:#7A6353;font-size:13px;font-weight:600;letter-spacing:.04em">Cores</a>
+        <a href="#tipografia" style="text-decoration:none;color:#7A6353;font-size:13px;font-weight:600;letter-spacing:.04em">Tipografia</a>
+        <a href="#aplicacoes" style="text-decoration:none;color:#7A6353;font-size:13px;font-weight:600;letter-spacing:.04em">Aplicações</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- COVER -->
+  <section data-screen-label="Capa" style="position:relative;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:120px 24px 80px;overflow:hidden">
+    <img src="assets/monogram-gold.png" alt="" aria-hidden="true" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-54%);width:min(820px,120vw);opacity:.05;pointer-events:none">
+    <div style="position:relative">
+      <div style="display:inline-flex;align-items:center;gap:14px;margin-bottom:40px">
+        <span style="width:34px;height:1px;background:#A8862E"></span>
+        <span style="font-size:12px;font-weight:600;letter-spacing:.34em;text-transform:uppercase;color:#A8862E">Manual de Marca · 2026</span>
+        <span style="width:34px;height:1px;background:#A8862E"></span>
+      </div>
+      <h1 style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(46px,8vw,104px);line-height:1;letter-spacing:.01em;margin:0;color:#5E4435">Identidade<br><span style="font-style:italic;color:#A8862E">Visual</span></h1>
+      <img src="assets/logo-tight.png" alt="Desirée Parada — Advocacia & Consultoria" style="width:min(420px,76vw);margin:48px auto 0;display:block">
+    </div>
+    <div style="position:absolute;bottom:36px;left:0;right:0;display:flex;justify-content:center;gap:10px;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#8E745D">
+      <span>Desirée Parada</span><span style="color:#A8862E">·</span><span>Advocacia &amp; Consultoria</span>
+    </div>
+  </section>
+
+  <!-- 01 A MARCA -->
+  <section id="marca" data-screen-label="A Marca" style="background:#FBFAF7;padding:clamp(80px,9vw,124px) 24px;border-top:1px solid rgba(94,68,53,.10)">
+    <div style="max-width:1180px;margin:0 auto">
+      <div class="two" data-reveal style="display:grid;grid-template-columns:.9fr 1.1fr;gap:72px;align-items:center">
+        <div>
+          <div style="display:inline-flex;align-items:center;gap:12px;margin-bottom:26px">
+            <span style="font-family:'Cormorant Garamond',serif;font-size:20px;font-style:italic;color:#A8862E">01</span>
+            <span style="width:24px;height:1px;background:#A8862E"></span>
+            <span style="font-size:11.5px;font-weight:600;letter-spacing:.26em;text-transform:uppercase;color:#A8862E">A Marca</span>
+          </div>
+          <h2 style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(32px,4.4vw,52px);line-height:1.08;margin:0 0 26px;color:#5E4435">Uma assinatura de autoridade e cuidado.</h2>
+          <p style="font-size:17px;line-height:1.7;color:#6E5547;margin:0 0 18px">A marca une duas linguagens: o <strong style="color:#5E4435;font-weight:600">monograma manuscrito DP</strong> — a assinatura pessoal, próxima e única — e a <strong style="color:#5E4435;font-weight:600">tipografia serifada</strong>, que transmite tradição, precisão e confiança.</p>
+          <p style="font-size:17px;line-height:1.7;color:#6E5547;margin:0">O dourado antigo confere sofisticação e valor; o marrom espresso traz solidez e discrição. Juntos, comunicam uma advocacia consultiva, premium e profundamente humana.</p>
+        </div>
+        <div style="background:#F0EFEB;border:1px solid rgba(94,68,53,.12);border-radius:4px;padding:clamp(40px,6vw,76px);display:flex;align-items:center;justify-content:center">
+          <img src="assets/logo-tight.png" alt="Logo principal Desirée Parada" style="width:100%;max-width:440px;display:block">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 02 LOGOS -->
+  <section id="logos" data-screen-label="Versões do Logo" style="background:#F0EFEB;padding:clamp(80px,9vw,124px) 24px">
+    <div style="max-width:1180px;margin:0 auto">
+      <div data-reveal style="max-width:680px;margin-bottom:52px">
+        <div style="display:inline-flex;align-items:center;gap:12px;margin-bottom:24px">
+          <span style="font-family:'Cormorant Garamond',serif;font-size:20px;font-style:italic;color:#A8862E">02</span>
+          <span style="width:24px;height:1px;background:#A8862E"></span>
+          <span style="font-size:11.5px;font-weight:600;letter-spacing:.26em;text-transform:uppercase;color:#A8862E">Versões do Logo</span>
+        </div>
+        <h2 style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(30px,4vw,46px);line-height:1.1;margin:0;color:#5E4435">Um sistema flexível para cada contexto.</h2>
+      </div>
+      <div class="logos-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:18px">
+        <div data-reveal style="border:1px solid rgba(94,68,53,.12);border-radius:4px;overflow:hidden">
+          <div style="background:#FBFAF7;aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;padding:38px"><img src="assets/logo-tight.png" alt="Versão principal" style="max-width:78%;max-height:78%"></div>
+          <div style="padding:16px 20px;background:#fff;border-top:1px solid rgba(94,68,53,.10)"><div style="font-size:13.5px;font-weight:700;color:#5E4435">Principal</div><div style="font-size:12px;color:#8E745D;margin-top:3px">Uso preferencial sobre fundos claros</div></div>
+        </div>
+        <div data-reveal style="border:1px solid rgba(94,68,53,.12);border-radius:4px;overflow:hidden">
+          <div style="background:#221A14;aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;padding:38px"><img src="assets/logo-tight-cream.png" alt="Versão negativa" style="max-width:78%;max-height:78%"></div>
+          <div style="padding:16px 20px;background:#fff;border-top:1px solid rgba(94,68,53,.10)"><div style="font-size:13.5px;font-weight:700;color:#5E4435">Negativo</div><div style="font-size:12px;color:#8E745D;margin-top:3px">Sobre fundos escuros / café</div></div>
+        </div>
+        <div data-reveal style="border:1px solid rgba(94,68,53,.12);border-radius:4px;overflow:hidden">
+          <div style="background:#FBFAF7;aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;padding:38px"><img src="assets/logo-tight-gold.png" alt="Versão monocromática ouro" style="max-width:78%;max-height:78%"></div>
+          <div style="padding:16px 20px;background:#fff;border-top:1px solid rgba(94,68,53,.10)"><div style="font-size:13.5px;font-weight:700;color:#5E4435">Monocromático Ouro</div><div style="font-size:12px;color:#8E745D;margin-top:3px">Aplicações de uma cor</div></div>
+        </div>
+        <div data-reveal style="border:1px solid rgba(94,68,53,.12);border-radius:4px;overflow:hidden">
+          <div style="background:#F0EFEB;aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;padding:44px"><img src="assets/monogram-transparent.png" alt="Monograma DP" style="max-width:62%;max-height:72%"></div>
+          <div style="padding:16px 20px;background:#fff;border-top:1px solid rgba(94,68,53,.10)"><div style="font-size:13.5px;font-weight:700;color:#5E4435">Monograma DP</div><div style="font-size:12px;color:#8E745D;margin-top:3px">Ícone, avatar e selo</div></div>
+        </div>
+        <div data-reveal style="border:1px solid rgba(94,68,53,.12);border-radius:4px;overflow:hidden">
+          <div style="background:#221A14;aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;padding:44px"><img src="assets/monogram-cream.png" alt="Monograma negativo" style="max-width:62%;max-height:72%"></div>
+          <div style="padding:16px 20px;background:#fff;border-top:1px solid rgba(94,68,53,.10)"><div style="font-size:13.5px;font-weight:700;color:#5E4435">Monograma Negativo</div><div style="font-size:12px;color:#8E745D;margin-top:3px">Ícone sobre fundo escuro</div></div>
+        </div>
+        <div data-reveal style="border:1px solid rgba(94,68,53,.12);border-radius:4px;overflow:hidden">
+          <div style="position:relative;background:#FBFAF7;aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;padding:38px;overflow:hidden"><img src="assets/monogram-gold.png" alt="Marca d'água" style="position:absolute;width:120%;opacity:.08"><span style="position:relative;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:22px;color:#8E745D">documento confidencial</span></div>
+          <div style="padding:16px 20px;background:#fff;border-top:1px solid rgba(94,68,53,.10)"><div style="font-size:13.5px;font-weight:700;color:#5E4435">Marca d'água</div><div style="font-size:12px;color:#8E745D;margin-top:3px">8% de opacidade em documentos</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03 USO CORRETO -->
+  <sc-if value="{{ showGuidelines }}" hint-placeholder-val="{{ true }}">
+  <section data-screen-label="Diretrizes" style="background:#FBFAF7;padding:clamp(80px,9vw,124px) 24px;border-top:1px solid rgba(94,68,53,.10)">
+    <div style="max-width:1180px;margin:0 auto">
+      <div data-reveal style="max-width:680px;margin-bottom:52px">
+        <div style="display:inline-flex;align-items:center;gap:12px;margin-bottom:24px">
+          <span style="font-family:'Cormorant Garamond',serif;font-size:20px;font-style:italic;color:#A8862E">03</span>
+          <span style="width:24px;height:1px;background:#A8862E"></span>
+          <span style="font-size:11.5px;font-weight:600;letter-spacing:.26em;text-transform:uppercase;color:#A8862E">Área de Respiro &amp; Usos</span>
+        </div>
+        <h2 style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(30px,4vw,46px);line-height:1.1;margin:0;color:#5E4435">Proteja a integridade da marca.</h2>
+      </div>
+      <div class="two" data-reveal style="display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:18px">
+        <div style="background:#F0EFEB;border:1px solid rgba(94,68,53,.12);border-radius:4px;padding:34px">
+          <div style="font-size:11.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#A8862E;margin-bottom:22px">Área de respiro</div>
+          <div style="border:1px dashed rgba(168,134,46,.6);border-radius:3px;padding:clamp(28px,5vw,52px);display:flex;align-items:center;justify-content:center;background:#FBFAF7"><img src="assets/logo-tight.png" alt="" style="max-width:78%"></div>
+          <p style="font-size:14px;line-height:1.6;color:#6E5547;margin:20px 0 0">Mantenha sempre um espaço livre ao redor do logo equivalente à <strong style="color:#5E4435">altura do monograma (x)</strong> em todos os lados. Nenhum outro elemento deve invadir essa área.</p>
+        </div>
+        <div style="background:#F0EFEB;border:1px solid rgba(94,68,53,.12);border-radius:4px;padding:34px;display:flex;flex-direction:column">
+          <div style="font-size:11.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#A8862E;margin-bottom:22px">Tamanho mínimo</div>
+          <div style="flex:1;display:flex;align-items:center;justify-content:center;gap:40px;flex-wrap:wrap;background:#FBFAF7;border-radius:3px;padding:32px">
+            <div style="text-align:center"><img src="assets/logo-tight.png" alt="" style="width:150px;display:block;margin-bottom:14px"><span style="font-family:ui-monospace,monospace;font-size:11px;color:#8E745D">150 px — digital</span></div>
+            <div style="text-align:center"><img src="assets/monogram-transparent.png" alt="" style="width:54px;display:block;margin:0 auto 14px"><span style="font-family:ui-monospace,monospace;font-size:11px;color:#8E745D">54 px — ícone</span></div>
+          </div>
+          <p style="font-size:14px;line-height:1.6;color:#6E5547;margin:20px 0 0">Abaixo do tamanho mínimo, use apenas o <strong style="color:#5E4435">monograma DP</strong> para preservar a legibilidade.</p>
+        </div>
+      </div>
+      <div class="dont-grid" data-reveal style="display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:18px">
+        <div style="background:#fff;border:1px solid rgba(94,68,53,.12);border-radius:4px;overflow:hidden">
+          <div style="position:relative;aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;padding:30px;background:#FBFAF7;overflow:hidden"><img src="assets/logo-tight.png" alt="" style="max-width:74%;max-height:60%;transform:scaleY(.58)"><span style="position:absolute;top:12px;right:12px;width:26px;height:26px;border-radius:50%;background:#B4534B;color:#fff;display:flex;align-items:center;justify-content:center;font-size:15px;line-height:1">✕</span></div>
+          <div style="padding:14px 18px;border-top:1px solid rgba(94,68,53,.10)"><div style="font-size:13px;font-weight:700;color:#5E4435">Não distorcer</div></div>
+        </div>
+        <div style="background:#fff;border:1px solid rgba(94,68,53,.12);border-radius:4px;overflow:hidden">
+          <div style="position:relative;aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;padding:30px;background:#FBFAF7;overflow:hidden"><img src="assets/logo-tight-gold.png" alt="" style="max-width:74%;max-height:60%;filter:hue-rotate(165deg) saturate(1.6)"><span style="position:absolute;top:12px;right:12px;width:26px;height:26px;border-radius:50%;background:#B4534B;color:#fff;display:flex;align-items:center;justify-content:center;font-size:15px;line-height:1">✕</span></div>
+          <div style="padding:14px 18px;border-top:1px solid rgba(94,68,53,.10)"><div style="font-size:13px;font-weight:700;color:#5E4435">Não recolorir</div></div>
+        </div>
+        <div style="background:#fff;border:1px solid rgba(94,68,53,.12);border-radius:4px;overflow:hidden">
+          <div style="position:relative;aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;padding:30px;background:#FBFAF7;overflow:hidden"><img src="assets/logo-tight.png" alt="" style="max-width:74%;max-height:60%;transform:rotate(-9deg)"><span style="position:absolute;top:12px;right:12px;width:26px;height:26px;border-radius:50%;background:#B4534B;color:#fff;display:flex;align-items:center;justify-content:center;font-size:15px;line-height:1">✕</span></div>
+          <div style="padding:14px 18px;border-top:1px solid rgba(94,68,53,.10)"><div style="font-size:13px;font-weight:700;color:#5E4435">Não girar</div></div>
+        </div>
+        <div style="background:#fff;border:1px solid rgba(94,68,53,.12);border-radius:4px;overflow:hidden">
+          <div style="position:relative;aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;padding:30px;background:#FBFAF7;overflow:hidden"><img src="assets/logo-tight.png" alt="" style="max-width:74%;max-height:60%;filter:drop-shadow(0 7px 6px rgba(0,0,0,.45))"><span style="position:absolute;top:12px;right:12px;width:26px;height:26px;border-radius:50%;background:#B4534B;color:#fff;display:flex;align-items:center;justify-content:center;font-size:15px;line-height:1">✕</span></div>
+          <div style="padding:14px 18px;border-top:1px solid rgba(94,68,53,.10)"><div style="font-size:13px;font-weight:700;color:#5E4435">Não aplicar efeitos</div></div>
+        </div>
+        <div style="background:#fff;border:1px solid rgba(94,68,53,.12);border-radius:4px;overflow:hidden">
+          <div style="position:relative;aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;padding:30px;background:#C9A24A;overflow:hidden"><img src="assets/logo-tight-gold.png" alt="" style="max-width:74%;max-height:60%"><span style="position:absolute;top:12px;right:12px;width:26px;height:26px;border-radius:50%;background:#B4534B;color:#fff;display:flex;align-items:center;justify-content:center;font-size:15px;line-height:1">✕</span></div>
+          <div style="padding:14px 18px;border-top:1px solid rgba(94,68,53,.10)"><div style="font-size:13px;font-weight:700;color:#5E4435">Não usar baixo contraste</div></div>
+        </div>
+        <div style="background:#fff;border:1px solid rgba(94,68,53,.12);border-radius:4px;overflow:hidden">
+          <div style="position:relative;aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;padding:30px;background:#FBFAF7;overflow:hidden"><img src="assets/logo-tight.png" alt="" style="max-width:74%;max-height:60%;transform:scaleX(.6)"><span style="position:absolute;top:12px;right:12px;width:26px;height:26px;border-radius:50%;background:#B4534B;color:#fff;display:flex;align-items:center;justify-content:center;font-size:15px;line-height:1">✕</span></div>
+          <div style="padding:14px 18px;border-top:1px solid rgba(94,68,53,.10)"><div style="font-size:13px;font-weight:700;color:#5E4435">Não comprimir</div></div>
+        </div>
+        <div style="background:#fff;border:1px solid rgba(94,68,53,.12);border-radius:4px;overflow:hidden">
+          <div style="position:relative;aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;padding:30px;background:#FBFAF7;overflow:hidden"><img src="assets/logo-tight.png" alt="" style="max-width:74%;max-height:60%;transform:skewX(-14deg)"><span style="position:absolute;top:12px;right:12px;width:26px;height:26px;border-radius:50%;background:#B4534B;color:#fff;display:flex;align-items:center;justify-content:center;font-size:15px;line-height:1">✕</span></div>
+          <div style="padding:14px 18px;border-top:1px solid rgba(94,68,53,.10)"><div style="font-size:13px;font-weight:700;color:#5E4435">Não inclinar</div></div>
+        </div>
+        <div style="background:#fff;border:1px solid rgba(94,68,53,.12);border-radius:4px;overflow:hidden">
+          <div style="position:relative;aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;padding:30px;background:#FBFAF7;overflow:hidden"><img src="assets/logo-tight.png" alt="" style="max-width:74%;max-height:60%;transform:scaleX(1.5)"><span style="position:absolute;top:12px;right:12px;width:26px;height:26px;border-radius:50%;background:#B4534B;color:#fff;display:flex;align-items:center;justify-content:center;font-size:15px;line-height:1">✕</span></div>
+          <div style="padding:14px 18px;border-top:1px solid rgba(94,68,53,.10)"><div style="font-size:13px;font-weight:700;color:#5E4435">Não esticar</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  </sc-if>
+
+  <!-- 04 CORES -->
+  <section id="cores" data-screen-label="Cores" style="background:#F0EFEB;padding:clamp(80px,9vw,124px) 24px">
+    <div style="max-width:1180px;margin:0 auto">
+      <div data-reveal style="max-width:680px;margin-bottom:52px">
+        <div style="display:inline-flex;align-items:center;gap:12px;margin-bottom:24px">
+          <span style="font-family:'Cormorant Garamond',serif;font-size:20px;font-style:italic;color:#A8862E">04</span>
+          <span style="width:24px;height:1px;background:#A8862E"></span>
+          <span style="font-size:11.5px;font-weight:600;letter-spacing:.26em;text-transform:uppercase;color:#A8862E">Paleta de Cores</span>
+        </div>
+        <h2 style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(30px,4vw,46px);line-height:1.1;margin:0;color:#5E4435">Quente, sóbria e atemporal.</h2>
+      </div>
+      <div class="pal-grid" data-reveal style="display:grid;grid-template-columns:repeat(4,1fr);gap:16px">
+        <sc-for list="{{ colors }}" as="c" hint-placeholder-count="7">
+          <div style="border:1px solid rgba(94,68,53,.12);border-radius:4px;overflow:hidden;background:#fff">
+            <div style="height:130px;background:{{ c.hex }};border-bottom:1px solid rgba(94,68,53,.10)"></div>
+            <div style="padding:18px 20px 22px">
+              <div style="font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:600;color:#5E4435">{{ c.name }}</div>
+              <div style="font-family:ui-monospace,monospace;font-size:12px;color:#A8862E;margin:8px 0 4px;letter-spacing:.04em">{{ c.hex }}</div>
+              <div style="font-family:ui-monospace,monospace;font-size:11px;color:#8E745D">{{ c.rgb }}</div>
+              <div style="font-size:12.5px;line-height:1.5;color:#6E5547;margin-top:12px">{{ c.use }}</div>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <!-- 05 TIPOGRAFIA -->
+  <section id="tipografia" data-screen-label="Tipografia" style="background:#221A14;color:#F0EFEB;padding:clamp(80px,9vw,124px) 24px">
+    <div style="max-width:1180px;margin:0 auto">
+      <div data-reveal style="max-width:680px;margin-bottom:56px">
+        <div style="display:inline-flex;align-items:center;gap:12px;margin-bottom:24px">
+          <span style="font-family:'Cormorant Garamond',serif;font-size:20px;font-style:italic;color:#C9A24A">05</span>
+          <span style="width:24px;height:1px;background:#C9A24A"></span>
+          <span style="font-size:11.5px;font-weight:600;letter-spacing:.26em;text-transform:uppercase;color:#C9A24A">Tipografia</span>
+        </div>
+        <h2 style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(30px,4vw,46px);line-height:1.1;margin:0;color:#F4F1EA">Duas vozes em harmonia.</h2>
+      </div>
+      <div class="two" data-reveal style="display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:18px">
+        <div style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);border-radius:4px;padding:40px">
+          <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:24px">
+            <span style="font-size:11.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#C9A24A">Display · Logotipo</span>
+            <span style="font-size:12px;color:#B7A48E">Cormorant Garamond</span>
+          </div>
+          <div style="font-family:'Cormorant Garamond',serif;font-size:96px;line-height:1;color:#F4F1EA">Aa</div>
+          <div style="font-family:'Cormorant Garamond',serif;font-size:21px;letter-spacing:.06em;color:#C9B79A;margin:24px 0 4px">ABCDEFGHIJKLM NOPQRSTUVWXYZ</div>
+          <div style="font-family:'Cormorant Garamond',serif;font-size:21px;color:#C9B79A">abcdefghijklm · 1234567890</div>
+          <p style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:24px;color:#F4F1EA;margin:28px 0 0">Estratégia, proteção e legado.</p>
+        </div>
+        <div style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);border-radius:4px;padding:40px">
+          <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:24px">
+            <span style="font-size:11.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#C9A24A">Texto · Apoio</span>
+            <span style="font-size:12px;color:#B7A48E">Hanken Grotesk</span>
+          </div>
+          <div style="font-family:'Hanken Grotesk';font-weight:600;font-size:90px;line-height:1;color:#F4F1EA">Aa</div>
+          <div style="font-size:15px;letter-spacing:.02em;color:#C9B79A;margin:26px 0 4px">ABCDEFGHIJKLM NOPQRSTUVWXYZ</div>
+          <div style="font-size:15px;color:#C9B79A">abcdefghijklm · 1234567890</div>
+          <p style="font-size:15px;line-height:1.7;color:#D8CBB6;margin:26px 0 0">Usada em textos corridos, legendas e informações de contato. Pesos 400–700 garantem clareza e hierarquia em qualquer aplicação.</p>
+        </div>
+      </div>
+      <div data-reveal style="background:rgba(201,162,74,.08);border:1px solid rgba(201,162,74,.3);border-radius:4px;padding:clamp(36px,5vw,56px);text-align:center">
+        <div style="font-size:11.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#C9A24A;margin-bottom:24px">Construção do logotipo</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(30px,5vw,56px);letter-spacing:.22em;color:#F4F1EA">DESIRÉE PARADA</div>
+        <div style="font-size:13px;letter-spacing:.34em;text-transform:uppercase;color:#C9B79A;margin-top:18px">Advocacia &amp; Consultoria</div>
+        <p style="font-size:13px;color:#B7A48E;margin:24px auto 0;max-width:460px">Cormorant Garamond Medium, caixa-alta, entreletra <span style="font-family:ui-monospace,monospace;color:#C9A24A">+0.22em</span>. Subtítulo em Hanken Grotesk, entreletra <span style="font-family:ui-monospace,monospace;color:#C9A24A">+0.34em</span>.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 06 MONOGRAMA -->
+  <section data-screen-label="Monograma" style="background:#FBFAF7;padding:clamp(80px,9vw,124px) 24px;border-top:1px solid rgba(94,68,53,.10)">
+    <div style="max-width:1180px;margin:0 auto">
+      <div class="two" data-reveal style="display:grid;grid-template-columns:1.05fr .95fr;gap:64px;align-items:center">
+        <div>
+          <div style="display:inline-flex;align-items:center;gap:12px;margin-bottom:24px">
+            <span style="font-family:'Cormorant Garamond',serif;font-size:20px;font-style:italic;color:#A8862E">06</span>
+            <span style="width:24px;height:1px;background:#A8862E"></span>
+            <span style="font-size:11.5px;font-weight:600;letter-spacing:.26em;text-transform:uppercase;color:#A8862E">O Monograma</span>
+          </div>
+          <h2 style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(30px,4vw,46px);line-height:1.1;margin:0 0 22px;color:#5E4435">A assinatura como símbolo.</h2>
+          <p style="font-size:17px;line-height:1.7;color:#6E5547;margin:0 0 28px">O monograma manuscrito <strong style="color:#5E4435">DP</strong> é o elemento mais versátil da marca. Funciona como ícone de aplicativo, foto de perfil, selo de documentos, carimbo e marca d'água — sempre preservando a leveza do traço.</p>
+          <div style="display:flex;gap:28px;flex-wrap:wrap">
+            <div style="text-align:center"><div style="width:72px;height:72px;border-radius:18px;background:#221A14;display:flex;align-items:center;justify-content:center;margin-bottom:10px"><img src="assets/monogram-cream.png" style="width:46px"></div><span style="font-size:11px;color:#8E745D">App / Avatar</span></div>
+            <div style="text-align:center"><div style="width:72px;height:72px;border-radius:50%;background:#F0EFEB;border:1px solid rgba(94,68,53,.14);display:flex;align-items:center;justify-content:center;margin-bottom:10px"><img src="assets/monogram-gold.png" style="width:44px"></div><span style="font-size:11px;color:#8E745D">Selo</span></div>
+            <div style="text-align:center"><div style="width:72px;height:72px;border-radius:14px;background:#A8862E;display:flex;align-items:center;justify-content:center;margin-bottom:10px"><img src="assets/monogram-cream.png" style="width:46px"></div><span style="font-size:11px;color:#8E745D">Favicon</span></div>
+          </div>
+        </div>
+        <div style="background:#F0EFEB;border:1px solid rgba(94,68,53,.12);border-radius:4px;padding:clamp(48px,7vw,90px);display:flex;align-items:center;justify-content:center"><img src="assets/monogram-transparent.png" alt="Monograma DP" style="width:100%;max-width:300px"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 07 APLICAÇÕES -->
+  <sc-if value="{{ showApplications }}" hint-placeholder-val="{{ true }}">
+  <section id="aplicacoes" data-screen-label="Aplicações" style="background:#F0EFEB;padding:clamp(80px,9vw,124px) 24px">
+    <div style="max-width:1180px;margin:0 auto">
+      <div data-reveal style="max-width:680px;margin-bottom:52px">
+        <div style="display:inline-flex;align-items:center;gap:12px;margin-bottom:24px">
+          <span style="font-family:'Cormorant Garamond',serif;font-size:20px;font-style:italic;color:#A8862E">07</span>
+          <span style="width:24px;height:1px;background:#A8862E"></span>
+          <span style="font-size:11.5px;font-weight:600;letter-spacing:.26em;text-transform:uppercase;color:#A8862E">Aplicações</span>
+        </div>
+        <h2 style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(30px,4vw,46px);line-height:1.1;margin:0;color:#5E4435">A marca aplicada no mundo real.</h2>
+      </div>
+
+      <!-- Cartão -->
+      <div data-reveal style="margin-bottom:64px">
+        <div style="font-size:11.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#A8862E;margin-bottom:20px">Cartão de Visita</div>
+        <div class="two" style="display:grid;grid-template-columns:1fr 1fr;gap:24px">
+          <!-- frente -->
+          <div style="aspect-ratio:1050/600;background:#F0EFEB;border:1px solid rgba(94,68,53,.12);border-radius:6px;box-shadow:0 20px 50px rgba(94,68,53,.12);display:flex;align-items:center;justify-content:center;padding:8%"><img src="assets/logo-tight.png" alt="Cartão frente" style="max-width:70%;max-height:74%"></div>
+          <!-- verso -->
+          <div style="aspect-ratio:1050/600;background:#F0EFEB;border:1px solid rgba(94,68,53,.12);border-radius:6px;box-shadow:0 20px 50px rgba(94,68,53,.12);padding:6.5% 6.5% 6%;display:flex;flex-direction:column">
+            <img src="assets/monogram-gold.png" style="width:13%;min-width:54px" alt="">
+            <div style="height:1.5px;background:linear-gradient(90deg,#A8862E,rgba(168,134,46,.25));margin:3.5% 0 5%"></div>
+            <div style="display:flex;justify-content:space-between;gap:5%;flex:1">
+              <div style="display:flex;flex-direction:column;gap:clamp(5px,1.1vw,11px);justify-content:flex-start">
+                <span style="font-family:'Cormorant Garamond',serif;font-size:clamp(11px,1.45vw,17px);letter-spacing:.08em;color:#7A5C49">HOLDING</span>
+                <span style="font-family:'Cormorant Garamond',serif;font-size:clamp(11px,1.45vw,17px);letter-spacing:.08em;color:#7A5C49">PLANEJAMENTO SUCESSÓRIO</span>
+                <span style="font-family:'Cormorant Garamond',serif;font-size:clamp(11px,1.45vw,17px);letter-spacing:.08em;color:#7A5C49">DIREITO EMPRESARIAL</span>
+                <span style="font-family:'Cormorant Garamond',serif;font-size:clamp(11px,1.45vw,17px);letter-spacing:.08em;color:#7A5C49">COMPLIANCE</span>
+              </div>
+              <img src="assets/qr.png" alt="QR" style="width:26%;height:auto;align-self:flex-start;border-radius:3px">
+            </div>
+            <div style="display:flex;flex-wrap:wrap;gap:4% 6%;margin-top:auto;padding-top:4%">
+              <span style="font-size:clamp(8px,1.05vw,12px);color:#7A5C49">+55 21 97596-6969</span>
+              <span style="font-size:clamp(8px,1.05vw,12px);color:#7A5C49">@desireeparada.adv</span>
+              <span style="font-size:clamp(8px,1.05vw,12px);color:#7A5C49">+55 21 3596-9162</span>
+              <span style="font-size:clamp(8px,1.05vw,12px);color:#7A5C49">desiree@morisakieparada.com.br</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Papelaria + Assinatura -->
+      <div class="two" data-reveal style="display:grid;grid-template-columns:.78fr 1.22fr;gap:24px;margin-bottom:64px;align-items:start">
+        <!-- letterhead -->
+        <div>
+          <div style="font-size:11.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#A8862E;margin-bottom:20px">Papel Timbrado</div>
+          <div style="aspect-ratio:1/1.414;background:#FBFAF7;border:1px solid rgba(94,68,53,.12);border-radius:4px;box-shadow:0 20px 50px rgba(94,68,53,.12);padding:11% 10%;display:flex;flex-direction:column;position:relative;overflow:hidden">
+            <img src="assets/monogram-gold.png" aria-hidden="true" style="position:absolute;bottom:8%;right:-8%;width:60%;opacity:.05">
+            <div style="display:flex;justify-content:space-between;align-items:flex-start">
+              <img src="assets/logo-tight.png" style="width:42%" alt="">
+              <span style="font-size:8px;letter-spacing:.16em;text-transform:uppercase;color:#A8862E;text-align:right;line-height:1.7">Advocacia<br>&amp; Consultoria</span>
+            </div>
+            <div style="height:1px;background:rgba(168,134,46,.4);margin:9% 0"></div>
+            <div style="display:flex;flex-direction:column;gap:7px;position:relative">
+              <span style="height:7px;width:36%;background:rgba(94,68,53,.14);border-radius:2px"></span>
+              <span style="height:6px;width:90%;background:rgba(94,68,53,.10);border-radius:2px"></span>
+              <span style="height:6px;width:85%;background:rgba(94,68,53,.10);border-radius:2px"></span>
+              <span style="height:6px;width:92%;background:rgba(94,68,53,.10);border-radius:2px"></span>
+              <span style="height:6px;width:60%;background:rgba(94,68,53,.10);border-radius:2px"></span>
+            </div>
+            <div style="margin-top:auto;display:flex;justify-content:space-between;align-items:center;border-top:1px solid rgba(94,68,53,.14);padding-top:6%">
+              <span style="font-size:7.5px;color:#8E745D">desiree@morisakieparada.com.br</span>
+              <span style="font-size:7.5px;color:#8E745D">+55 21 97596-6969</span>
+            </div>
+          </div>
+        </div>
+        <!-- email signature -->
+        <div>
+          <div style="font-size:11.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#A8862E;margin-bottom:20px">Assinatura de E-mail</div>
+          <div style="background:#fff;border:1px solid rgba(94,68,53,.12);border-radius:4px;box-shadow:0 16px 40px rgba(94,68,53,.10);padding:34px 36px;display:flex;align-items:center;gap:30px;flex-wrap:wrap">
+            <img src="assets/monogram-gold.png" alt="" style="width:96px;flex:none">
+            <div style="width:1px;align-self:stretch;background:rgba(168,134,46,.4);min-height:90px" class="sig-div"></div>
+            <div style="flex:1;min-width:200px">
+              <div style="font-family:'Cormorant Garamond',serif;font-size:27px;font-weight:600;color:#5E4435;line-height:1.1">Desirée Parada</div>
+              <div style="font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#A8862E;margin:6px 0 16px">Advocacia &amp; Consultoria</div>
+              <div style="display:flex;flex-direction:column;gap:7px">
+                <span style="font-size:13.5px;color:#6E5547">WhatsApp · +55 21 97596-6969</span>
+                <span style="font-size:13.5px;color:#6E5547">Tel · +55 21 3596-9162</span>
+                <span style="font-size:13.5px;color:#6E5547">desiree@morisakieparada.com.br</span>
+                <span style="font-size:13.5px;color:#6E5547">@desireeparada.adv</span>
+              </div>
+            </div>
+          </div>
+          <p style="font-size:13px;line-height:1.6;color:#8E745D;margin:20px 2px 0">Bloco horizontal para clientes de e-mail. Monograma em ouro à esquerda, filete vertical dourado e dados em Hanken Grotesk.</p>
+        </div>
+      </div>
+
+      <!-- Social -->
+      <div data-reveal style="margin-bottom:64px">
+        <div style="font-size:11.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#A8862E;margin-bottom:20px">Redes Sociais</div>
+        <div style="display:flex;gap:24px;flex-wrap:wrap;align-items:flex-start">
+          <!-- post 1:1 -->
+          <div style="flex:none;width:min(360px,80vw)">
+            <div style="aspect-ratio:1/1;background:#221A14;border-radius:6px;box-shadow:0 20px 50px rgba(94,68,53,.14);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:14%;position:relative;overflow:hidden">
+              <img src="assets/monogram-gold.png" aria-hidden="true" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:130%;opacity:.06">
+              <span style="position:relative;font-size:10px;font-weight:600;letter-spacing:.3em;text-transform:uppercase;color:#C9A24A;margin-bottom:22px">Patrimônio · Sucessão</span>
+              <p style="position:relative;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(22px,5vw,30px);line-height:1.25;color:#F4F1EA;margin:0">Proteger hoje é preservar o legado de amanhã.</p>
+              <span style="position:relative;font-size:11px;letter-spacing:.16em;color:#B7A48E;margin-top:26px">@desireeparada.adv</span>
+            </div>
+            <div style="font-size:12px;color:#8E745D;margin-top:12px;text-align:center">Feed · 1080 × 1080</div>
+          </div>
+          <!-- stories 9:16 -->
+          <div style="flex:none;width:min(240px,60vw)">
+            <div style="aspect-ratio:9/16;background:#F0EFEB;border:1px solid rgba(94,68,53,.12);border-radius:6px;box-shadow:0 20px 50px rgba(94,68,53,.14);display:flex;flex-direction:column;align-items:center;padding:16% 10%;text-align:center">
+              <img src="assets/monogram-transparent.png" style="width:42%;margin-bottom:auto" alt="">
+              <span style="font-size:9px;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:#A8862E;margin-bottom:16px">NR-1 · Compliance</span>
+              <p style="font-family:'Cormorant Garamond',serif;font-size:22px;line-height:1.25;color:#5E4435;margin:0 0 auto">Sua empresa está em conformidade?</p>
+              <span style="font-size:10px;letter-spacing:.18em;color:#8E745D;border:1px solid rgba(168,134,46,.5);padding:8px 18px;border-radius:40px">SAIBA MAIS</span>
+            </div>
+            <div style="font-size:12px;color:#8E745D;margin-top:12px;text-align:center">Stories · 1080 × 1920</div>
+          </div>
+          <!-- profile -->
+          <div style="flex:none;width:min(200px,50vw)">
+            <div style="background:#fff;border:1px solid rgba(94,68,53,.12);border-radius:6px;box-shadow:0 20px 50px rgba(94,68,53,.10);padding:28px;display:flex;flex-direction:column;align-items:center;text-align:center">
+              <div style="width:84px;height:84px;border-radius:50%;background:#221A14;display:flex;align-items:center;justify-content:center;margin-bottom:16px;border:2px solid #A8862E"><img src="assets/monogram-cream.png" style="width:52px"></div>
+              <div style="font-size:14px;font-weight:700;color:#5E4435">desireeparada.adv</div>
+              <div style="font-size:12px;color:#8E745D;margin-top:4px;line-height:1.5">Advocacia &amp; Consultoria<br>Holding · Sucessório · Compliance</div>
+            </div>
+            <div style="font-size:12px;color:#8E745D;margin-top:12px;text-align:center">Foto de perfil</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Capa apresentação -->
+      <div data-reveal>
+        <div style="font-size:11.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#A8862E;margin-bottom:20px">Capa de Apresentação</div>
+        <div style="aspect-ratio:16/9;background:#221A14;border-radius:6px;box-shadow:0 24px 60px rgba(94,68,53,.18);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:6%;position:relative;overflow:hidden">
+          <img src="assets/monogram-gold.png" aria-hidden="true" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:70%;opacity:.06">
+          <div style="position:relative">
+            <div style="display:inline-flex;align-items:center;gap:14px;margin-bottom:30px"><span style="width:30px;height:1px;background:#C9A24A"></span><span style="font-size:11px;font-weight:600;letter-spacing:.3em;text-transform:uppercase;color:#C9A24A">Proposta de Consultoria</span><span style="width:30px;height:1px;background:#C9A24A"></span></div>
+            <img src="assets/logo-tight-cream.png" style="width:min(360px,60%);display:block;margin:0 auto" alt="">
+            <p style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(16px,2.4vw,24px);color:#C9B79A;margin:28px 0 0">Estratégia jurídica para empresas, patrimônios e sucessão.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  </sc-if>
+
+  <!-- CLOSING -->
+  <footer data-screen-label="Fechamento" style="background:#221A14;color:#F0EFEB;padding:clamp(88px,10vw,140px) 24px 56px;text-align:center;position:relative;overflow:hidden">
+    <img src="assets/monogram-gold.png" aria-hidden="true" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:min(700px,110vw);opacity:.05">
+    <div data-reveal style="position:relative;max-width:620px;margin:0 auto">
+      <img src="assets/logo-tight-cream.png" alt="Desirée Parada" style="width:min(360px,72vw);margin:0 auto 40px;display:block">
+      <p style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(20px,3vw,28px);line-height:1.4;color:#C9B79A;margin:0 0 40px">“Protegemos empresas, patrimônios e gestores antes que os problemas aconteçam.”</p>
+      <div style="display:flex;justify-content:center;flex-wrap:wrap;gap:10px 22px;font-size:13px;letter-spacing:.04em;color:#B7A48E">
+        <span>+55 21 97596-6969</span><span style="color:#A8862E">·</span>
+        <span>@desireeparada.adv</span><span style="color:#A8862E">·</span>
+        <span>desiree@morisakieparada.com.br</span>
+      </div>
+      <div style="margin-top:48px;padding-top:28px;border-top:1px solid rgba(255,255,255,.10);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#7C6A57">Manual de Identidade Visual · 2026</div>
+    </div>
+  </footer>
+
+<template id="__bundler_thumbnail" data-bg-color="#221A14">
+  <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1200" height="800" fill="#221A14"/>
+    <text x="600" y="430" text-anchor="middle" font-family="Georgia,serif" font-size="180" font-style="italic" fill="#A8862E">DP</text>
+    <rect x="500" y="500" width="200" height="3" fill="#A8862E"/>
+    <text x="600" y="560" text-anchor="middle" font-family="Georgia,serif" font-size="34" letter-spacing="10" fill="#C9B79A">DESIRÉE PARADA</text>
+  </svg>
+</template>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1280,&quot;height&quot;:900},&quot;showApplications&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;},&quot;showGuidelines&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    const p = this.props || {};
+    const colors = [
+      { name: 'Pergaminho', hex: '#F0EFEB', rgb: '240 · 239 · 235', use: 'Fundo principal. Base de toda a comunicação.' },
+      { name: 'Areia', hex: '#FBFAF7', rgb: '251 · 250 · 247', use: 'Fundo claro alternativo, cartões e respiros.' },
+      { name: 'Café Escuro', hex: '#221A14', rgb: '34 · 26 · 20', use: 'Fundos de contraste e versão negativa.' },
+      { name: 'Ouro Antigo', hex: '#A8862E', rgb: '168 · 134 · 46', use: 'Cor de marca. Monograma, filetes e destaques.' },
+      { name: 'Champagne', hex: '#C9A24A', rgb: '201 · 162 · 74', use: 'Dourado claro para fundos escuros e detalhes.' },
+      { name: 'Espresso', hex: '#5E4435', rgb: '94 · 68 · 53', use: 'Texto principal e títulos sobre fundos claros.' },
+      { name: 'Taupe', hex: '#8E745D', rgb: '142 · 116 · 93', use: 'Texto secundário, legendas e apoios.' }
+    ];
+    return {
+      colors,
+      showApplications: p.showApplications ?? true,
+      showGuidelines: p.showGuidelines ?? true,
+      rootRef: (el) => { this._root = el; }
+    };
+  }
+  componentDidMount() {
+    const root = this._root || document;
+    const els = root.querySelectorAll('[data-reveal]');
+    els.forEach((el) => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(24px)';
+      el.style.transition = 'opacity .8s cubic-bezier(.22,.61,.36,1), transform .8s cubic-bezier(.22,.61,.36,1)';
+    });
+    const reveal = (el) => { el.style.opacity = '1'; el.style.transform = 'none'; };
+    const inView = (el) => {
+      const r = el.getBoundingClientRect();
+      const h = window.innerHeight || document.documentElement.clientHeight;
+      return r.top < h * 0.92 && r.bottom > 0;
+    };
+    let io = null;
+    try {
+      io = new IntersectionObserver((ents) => {
+        ents.forEach((e) => { if (e.isIntersecting) { reveal(e.target); io.unobserve(e.target); } });
+      }, { threshold: 0.08, rootMargin: '0px 0px -8% 0px' });
+      els.forEach((el) => { if (inView(el)) reveal(el); else io.observe(el); });
+    } catch (err) { io = null; }
+    const onScrollReveal = () => {
+      let remaining = 0;
+      els.forEach((el) => { if (el.style.opacity === '1') return; if (inView(el)) reveal(el); else remaining++; });
+      if (remaining === 0) window.removeEventListener('scroll', onScrollReveal);
+    };
+    window.addEventListener('scroll', onScrollReveal, { passive: true });
+    onScrollReveal();
+    setTimeout(() => { els.forEach(reveal); }, 1400);
+
+    // smooth anchor scroll with offset
+    root.querySelectorAll('a[href^="#"]').forEach((a) => {
+      a.addEventListener('click', (ev) => {
+        const id = a.getAttribute('href');
+        if (id && id.length > 1) {
+          const t = root.querySelector(id) || document.querySelector(id);
+          if (t) { ev.preventDefault(); window.scrollTo({ top: t.getBoundingClientRect().top + window.pageYOffset - 60, behavior: 'smooth' }); }
+        }
+      });
+    });
+
+    // nav background on scroll
+    const nav = root.querySelector('[data-nav]');
+    if (nav) {
+      const onScroll = () => {
+        if (window.pageYOffset > 40) {
+          nav.style.background = 'rgba(240,239,235,.9)';
+          nav.style.backdropFilter = 'blur(12px)';
+          nav.style.borderBottomColor = 'rgba(94,68,53,.12)';
+        } else {
+          nav.style.background = 'rgba(240,239,235,0)';
+          nav.style.backdropFilter = 'blur(0px)';
+          nav.style.borderBottomColor = 'rgba(94,68,53,0)';
+        }
+      };
+      onScroll();
+      window.addEventListener('scroll', onScroll, { passive: true });
+    }
+  }
+}
+</script>
+</body>
+</html>

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { pegMark, site, whatsappUrl } from "@/lib/site";
+import { addressLine1, addressLine2, mapsUrl, pegMark, site, whatsappUrl } from "@/lib/site";
 
 const footerNav = [
   { href: "/#riscos", label: "Mapa de Riscos" },
@@ -43,6 +43,33 @@ export default function Footer() {
                 className="text-[15px] text-mist-soft no-underline hover:text-gold"
               >
                 {site.email}
+              </a>
+              <a
+                href={mapsUrl}
+                target="_blank"
+                rel="noopener"
+                className="group mt-1 flex items-start gap-2.5 no-underline"
+              >
+                <svg
+                  className="mt-[3px] flex-none"
+                  width="15"
+                  height="15"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M8 1.5c-2.5 0-4.5 2-4.5 4.5C3.5 9.5 8 14.5 8 14.5s4.5-5 4.5-8.5C12.5 3.5 10.5 1.5 8 1.5Z"
+                    stroke="#D4AF37"
+                    strokeWidth="1.3"
+                  />
+                  <circle cx="8" cy="6" r="1.6" stroke="#D4AF37" strokeWidth="1.3" />
+                </svg>
+                <address className="text-[15px] not-italic leading-[1.5] text-mist-soft group-hover:text-gold">
+                  {addressLine1}
+                  <br />
+                  {addressLine2}
+                </address>
               </a>
             </div>
           </div>
