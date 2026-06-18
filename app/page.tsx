@@ -241,7 +241,7 @@ export default function Home() {
         <section
           id="metodo"
           aria-label="Método PEG"
-          className="relative scroll-mt-20 overflow-hidden bg-sand px-6 py-[clamp(80px,9vw,128px)] text-espresso"
+          className="relative scroll-mt-20 overflow-hidden bg-espresso px-6 py-[clamp(80px,9vw,128px)] text-cream"
         >
           <div
             aria-hidden="true"
@@ -253,15 +253,15 @@ export default function Home() {
           />
           <div className="relative mx-auto max-w-[1200px]">
             <Reveal className="mx-auto mb-16 max-w-[680px] text-center">
-              <Eyebrow centered>
+              <Eyebrow tone="light" centered>
                 Metodologia Exclusiva
               </Eyebrow>
-              <h2 className="m-0 mb-4 font-serif text-[clamp(36px,4.6vw,58px)] font-normal leading-[1.08] tracking-[-0.01em] text-ink">
+              <h2 className="m-0 mb-4 font-serif text-[clamp(36px,4.6vw,58px)] font-normal leading-[1.08] tracking-[-0.01em] text-cream">
                 Método PEG{pegMark}
               </h2>
-              <p className="m-0 text-base font-semibold uppercase tracking-[0.18em] text-taupe">
-                Proteção <span className="text-gold-dark">•</span> Estruturação{" "}
-                <span className="text-gold-dark">•</span> Governança
+              <p className="m-0 text-base font-semibold uppercase tracking-[0.18em] text-[#D8CBB6]">
+                Proteção <span className="text-gold-light">•</span> Estruturação{" "}
+                <span className="text-gold-light">•</span> Governança
               </p>
             </Reveal>
             <Reveal className="flex flex-col items-stretch gap-5 lg:flex-row lg:gap-0">
@@ -287,23 +287,23 @@ export default function Home() {
                   <div
                     className={`flex-1 rounded-[3px] border p-8 ${
                       step.highlight
-                        ? "border-gold/40 bg-gold/[0.10]"
-                        : "border-line-soft bg-white"
+                        ? "border-gold/45 bg-gold/[0.14]"
+                        : "border-white/15 bg-white/[0.05]"
                     }`}
                   >
                     <div
                       className={`mb-[18px] font-serif text-[46px] leading-none ${
-                        step.highlight ? "text-gold-dark" : "text-gold-dark/45"
+                        step.highlight ? "text-gold-light" : "text-gold-light/50"
                       }`}
                     >
                       {step.n}
                     </div>
-                    <h3 className="m-0 mb-3 font-serif text-2xl font-medium text-ink">
+                    <h3 className="m-0 mb-3 font-serif text-2xl font-medium text-cream">
                       {step.t}
                     </h3>
                     <p
                       className={`m-0 text-[15px] leading-[1.6] ${
-                        step.highlight ? "text-[#5E4435]" : "text-[#6E5547]"
+                        step.highlight ? "text-[#ECE3D4]" : "text-[#D8CBB6]"
                       }`}
                     >
                       {step.d}
@@ -314,7 +314,7 @@ export default function Home() {
                       <svg width="40" height="16" viewBox="0 0 40 16" fill="none" aria-hidden="true">
                         <path
                           d="M0 8h34M30 3l5 5-5 5"
-                          stroke="#A8862E"
+                          stroke="#C9A24A"
                           strokeWidth="1.4"
                           strokeLinecap="round"
                           strokeLinejoin="round"
@@ -424,11 +424,11 @@ export default function Home() {
         </section>
 
         {/* ===================== DEPOIMENTOS ===================== */}
-        <section aria-label="Depoimentos" className="bg-sand px-6 py-[clamp(80px,9vw,128px)] text-espresso">
+        <section aria-label="Depoimentos" className="bg-espresso px-6 py-[clamp(80px,9vw,128px)] text-cream">
           <div className="mx-auto max-w-[1200px]">
             <Reveal className="mb-14 max-w-[680px]">
-              <Eyebrow>Confiança</Eyebrow>
-              <h2 className="m-0 font-serif text-[clamp(30px,3.8vw,48px)] font-normal leading-[1.12] tracking-[-0.01em] text-ink">
+              <Eyebrow tone="light">Confiança</Eyebrow>
+              <h2 className="m-0 font-serif text-[clamp(30px,3.8vw,48px)] font-normal leading-[1.12] tracking-[-0.01em] text-cream">
                 O que dizem quem já estruturou com segurança.
               </h2>
             </Reveal>
@@ -437,17 +437,17 @@ export default function Home() {
                 <Reveal
                   key={i}
                   as="figure"
-                  className="m-0 flex flex-col gap-6 rounded-[3px] border border-line-soft bg-white p-[30px]"
+                  className="m-0 flex flex-col gap-6 rounded-[3px] border border-white/12 bg-white/[0.05] p-[30px]"
                 >
-                  <span aria-hidden="true" className="h-6 font-serif text-[54px] leading-[0.6] text-gold-dark/35">
+                  <span aria-hidden="true" className="h-6 font-serif text-[54px] leading-[0.6] text-gold-light/40">
                     &ldquo;
                   </span>
-                  <blockquote className="m-0 flex-1 font-serif text-lg italic leading-[1.5] text-[#5E4435]">
+                  <blockquote className="m-0 flex-1 font-serif text-lg italic leading-[1.5] text-[#ECE3D4]">
                     {t.quote}
                   </blockquote>
-                  <figcaption className="border-t border-line-soft pt-[18px]">
-                    <div className="text-sm font-bold text-ink">{t.role}</div>
-                    <div className="mt-[3px] text-[13px] text-taupe">{t.org}</div>
+                  <figcaption className="border-t border-white/12 pt-[18px]">
+                    <div className="text-sm font-bold text-cream">{t.role}</div>
+                    <div className="mt-[3px] text-[13px] text-[#C9B79A]">{t.org}</div>
                   </figcaption>
                 </Reveal>
               ))}
