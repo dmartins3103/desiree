@@ -7,7 +7,7 @@ export const site = {
   shortName: "Desirée Parada",
   tagline: "Estratégia Jurídica Empresarial",
   // URL canônica de produção (sem barra final).
-  url: "https://desiree-chi.vercel.app",
+  url: "https://www.desireeparada.com.br",
   locale: "pt_BR",
   // Meta description do Google (ideal ≤ ~155 caracteres, persuasiva e com palavras-chave).
   description:
