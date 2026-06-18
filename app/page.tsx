@@ -28,7 +28,7 @@ export default function Home() {
         {/* ===================== HERO ===================== */}
         <section
           aria-label="Apresentação"
-          className="relative overflow-hidden bg-ink px-6 pb-24 pt-[148px] text-white"
+          className="relative overflow-hidden bg-cloud px-6 pb-24 pt-[148px] text-espresso"
         >
           <div
             aria-hidden="true"
@@ -41,14 +41,14 @@ export default function Home() {
           <div className="relative mx-auto max-w-[1200px]">
             <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16">
               <Reveal>
-                <Eyebrow tone="light">Estratégia Jurídica Empresarial</Eyebrow>
-                <h1 className="m-0 mb-[26px] font-serif text-[clamp(38px,5.1vw,64px)] font-normal leading-[1.08] tracking-[-0.01em]">
+                <Eyebrow>Estratégia Jurídica Empresarial</Eyebrow>
+                <h1 className="m-0 mb-[26px] font-serif text-[clamp(38px,5.1vw,64px)] font-normal leading-[1.08] tracking-[-0.01em] text-ink">
                   Protegemos empresas, patrimônios e gestores{" "}
-                  <span className="italic text-gold">
+                  <span className="italic text-gold-dark">
                     antes que os problemas aconteçam.
                   </span>
                 </h1>
-                <p className="m-0 mb-[38px] max-w-[560px] text-[clamp(16px,1.5vw,19px)] leading-[1.6] text-mist">
+                <p className="m-0 mb-[38px] max-w-[560px] text-[clamp(16px,1.5vw,19px)] leading-[1.6] text-[#6E5547]">
                   Assessoria jurídica estratégica para empresários, executivos e famílias
                   empresárias que desejam crescer com segurança, reduzir riscos e preservar
                   patrimônio.
@@ -65,12 +65,12 @@ export default function Home() {
                     href={whatsappUrl}
                     target="_blank"
                     rel="noopener"
-                    className="inline-flex items-center gap-2.5 rounded-[2px] border border-white/[0.28] px-[26px] py-[17px] text-[15px] font-semibold text-white no-underline transition-colors hover:border-gold hover:text-gold"
+                    className="inline-flex items-center gap-2.5 rounded-[2px] border border-espresso/25 px-[26px] py-[17px] text-[15px] font-semibold text-espresso no-underline transition-colors hover:border-gold-dark hover:text-gold-dark"
                   >
                     Falar no WhatsApp
                   </a>
                 </div>
-                <div className="mt-11 flex flex-wrap items-center gap-x-[22px] gap-y-2.5 border-t border-white/10 pt-[30px]">
+                <div className="mt-11 flex flex-wrap items-center gap-x-[22px] gap-y-2.5 border-t border-espresso/15 pt-[30px]">
                   {[
                     "Direito Empresarial",
                     "Compliance",
@@ -79,8 +79,8 @@ export default function Home() {
                     "Holding · Sucessão",
                   ].map((tag, i) => (
                     <span key={tag} className="flex items-center gap-x-[22px]">
-                      {i > 0 && <span className="text-gold/50">·</span>}
-                      <span className="text-[12.5px] font-semibold uppercase tracking-[0.04em] text-slate-muted">
+                      {i > 0 && <span className="text-gold/60">·</span>}
+                      <span className="text-[12.5px] font-semibold uppercase tracking-[0.04em] text-taupe">
                         {tag}
                       </span>
                     </span>
@@ -89,7 +89,7 @@ export default function Home() {
               </Reveal>
 
               <Reveal className="relative">
-                <div className="relative aspect-[4/5] overflow-hidden rounded-[3px] border border-white/[0.12]">
+                <div className="relative aspect-[4/5] overflow-hidden rounded-[3px] border border-espresso/15">
                   <Image
                     src="/fotos/hero.jpg"
                     alt="Desirée Parada, advogada especialista em estratégia jurídica empresarial"
@@ -146,15 +146,15 @@ export default function Home() {
         <section
           id="riscos"
           aria-label="Mapa de Riscos"
-          className="scroll-mt-20 bg-ink px-6 py-[clamp(80px,9vw,128px)] text-white"
+          className="scroll-mt-20 bg-white px-6 py-[clamp(80px,9vw,128px)] text-espresso"
         >
           <div className="mx-auto max-w-[1200px]">
             <Reveal className="mb-[60px] max-w-[760px]">
-              <Eyebrow tone="light">Mapa de Riscos</Eyebrow>
-              <h2 className="m-0 mb-5 font-serif text-[clamp(30px,3.8vw,48px)] font-normal leading-[1.12] tracking-[-0.01em]">
+              <Eyebrow>Mapa de Riscos</Eyebrow>
+              <h2 className="m-0 mb-5 font-serif text-[clamp(30px,3.8vw,48px)] font-normal leading-[1.12] tracking-[-0.01em] text-ink">
                 Sua empresa está preparada para os riscos de hoje?
               </h2>
-              <p className="m-0 text-lg leading-[1.6] text-mist">
+              <p className="m-0 text-lg leading-[1.6] text-[#6E5547]">
                 Riscos invisíveis hoje tornam-se passivos caros amanhã. Cada frente abaixo gera
                 impacto financeiro, operacional e jurídico.
               </p>
@@ -163,15 +163,15 @@ export default function Home() {
               {risks.map((r) => (
                 <Reveal
                   key={r.n}
-                  className="rounded-[3px] border border-white/10 bg-white/[0.03] p-7 transition-colors hover:border-gold/50 hover:bg-white/[0.05]"
+                  className="rounded-[3px] border border-line-soft bg-cloud p-7 transition-[box-shadow,border-color] hover:border-gold/50 hover:shadow-[0_16px_40px_rgba(94,68,53,.08)]"
                 >
                   <div className="mb-5 flex items-center justify-between">
-                    <span className="font-serif text-[22px] text-gold">{r.n}</span>
-                    <span className="rounded-[2px] border border-white/[0.14] px-2.5 py-[5px] text-[10.5px] font-semibold uppercase tracking-[0.16em] text-[#B7A48E]">
+                    <span className="font-serif text-[22px] text-gold-dark">{r.n}</span>
+                    <span className="rounded-[2px] border border-espresso/15 px-2.5 py-[5px] text-[10.5px] font-semibold uppercase tracking-[0.16em] text-taupe">
                       {r.tag}
                     </span>
                   </div>
-                  <h3 className="m-0 mb-5 font-serif text-[21px] font-medium leading-[1.22] text-white">
+                  <h3 className="m-0 mb-5 font-serif text-[21px] font-medium leading-[1.22] text-ink">
                     {r.title}
                   </h3>
                   <dl className="m-0 flex flex-col gap-3">
@@ -181,10 +181,10 @@ export default function Home() {
                       ["Jurídico", r.jur],
                     ].map(([label, val]) => (
                       <div key={label} className="flex gap-3">
-                        <dt className="w-[78px] flex-none pt-0.5 text-[11px] font-bold uppercase tracking-[0.08em] text-gold">
+                        <dt className="w-[78px] flex-none pt-0.5 text-[11px] font-bold uppercase tracking-[0.08em] text-gold-dark">
                           {label}
                         </dt>
-                        <dd className="m-0 text-[13.5px] leading-[1.5] text-mist">{val}</dd>
+                        <dd className="m-0 text-[13.5px] leading-[1.5] text-[#6E5547]">{val}</dd>
                       </div>
                     ))}
                   </dl>
@@ -241,7 +241,7 @@ export default function Home() {
         <section
           id="metodo"
           aria-label="Método PEG"
-          className="relative scroll-mt-20 overflow-hidden bg-ink px-6 py-[clamp(80px,9vw,128px)] text-white"
+          className="relative scroll-mt-20 overflow-hidden bg-sand px-6 py-[clamp(80px,9vw,128px)] text-espresso"
         >
           <div
             aria-hidden="true"
@@ -253,15 +253,15 @@ export default function Home() {
           />
           <div className="relative mx-auto max-w-[1200px]">
             <Reveal className="mx-auto mb-16 max-w-[680px] text-center">
-              <Eyebrow tone="light" centered>
+              <Eyebrow centered>
                 Metodologia Exclusiva
               </Eyebrow>
-              <h2 className="m-0 mb-4 font-serif text-[clamp(36px,4.6vw,58px)] font-normal leading-[1.08] tracking-[-0.01em]">
+              <h2 className="m-0 mb-4 font-serif text-[clamp(36px,4.6vw,58px)] font-normal leading-[1.08] tracking-[-0.01em] text-ink">
                 Método PEG{pegMark}
               </h2>
-              <p className="m-0 text-base font-semibold uppercase tracking-[0.18em] text-mist">
-                Proteção <span className="text-gold">•</span> Estruturação{" "}
-                <span className="text-gold">•</span> Governança
+              <p className="m-0 text-base font-semibold uppercase tracking-[0.18em] text-taupe">
+                Proteção <span className="text-gold-dark">•</span> Estruturação{" "}
+                <span className="text-gold-dark">•</span> Governança
               </p>
             </Reveal>
             <Reveal className="flex flex-col items-stretch gap-5 lg:flex-row lg:gap-0">
@@ -287,23 +287,23 @@ export default function Home() {
                   <div
                     className={`flex-1 rounded-[3px] border p-8 ${
                       step.highlight
-                        ? "border-gold/35 bg-gold/[0.07]"
-                        : "border-white/[0.12] bg-white/[0.03]"
+                        ? "border-gold/40 bg-gold/[0.10]"
+                        : "border-line-soft bg-white"
                     }`}
                   >
                     <div
                       className={`mb-[18px] font-serif text-[46px] leading-none ${
-                        step.highlight ? "text-gold" : "text-gold/55"
+                        step.highlight ? "text-gold-dark" : "text-gold-dark/45"
                       }`}
                     >
                       {step.n}
                     </div>
-                    <h3 className="m-0 mb-3 font-serif text-2xl font-medium text-white">
+                    <h3 className="m-0 mb-3 font-serif text-2xl font-medium text-ink">
                       {step.t}
                     </h3>
                     <p
                       className={`m-0 text-[15px] leading-[1.6] ${
-                        step.highlight ? "text-[#D8CBB6]" : "text-mist"
+                        step.highlight ? "text-[#5E4435]" : "text-[#6E5547]"
                       }`}
                     >
                       {step.d}
@@ -424,11 +424,11 @@ export default function Home() {
         </section>
 
         {/* ===================== DEPOIMENTOS ===================== */}
-        <section aria-label="Depoimentos" className="bg-ink px-6 py-[clamp(80px,9vw,128px)] text-white">
+        <section aria-label="Depoimentos" className="bg-sand px-6 py-[clamp(80px,9vw,128px)] text-espresso">
           <div className="mx-auto max-w-[1200px]">
             <Reveal className="mb-14 max-w-[680px]">
-              <Eyebrow tone="light">Confiança</Eyebrow>
-              <h2 className="m-0 font-serif text-[clamp(30px,3.8vw,48px)] font-normal leading-[1.12] tracking-[-0.01em] text-white">
+              <Eyebrow>Confiança</Eyebrow>
+              <h2 className="m-0 font-serif text-[clamp(30px,3.8vw,48px)] font-normal leading-[1.12] tracking-[-0.01em] text-ink">
                 O que dizem quem já estruturou com segurança.
               </h2>
             </Reveal>
@@ -437,17 +437,17 @@ export default function Home() {
                 <Reveal
                   key={i}
                   as="figure"
-                  className="m-0 flex flex-col gap-6 rounded-[3px] border border-white/10 bg-white/[0.03] p-[30px]"
+                  className="m-0 flex flex-col gap-6 rounded-[3px] border border-line-soft bg-white p-[30px]"
                 >
-                  <span aria-hidden="true" className="h-6 font-serif text-[54px] leading-[0.6] text-gold/45">
+                  <span aria-hidden="true" className="h-6 font-serif text-[54px] leading-[0.6] text-gold-dark/35">
                     &ldquo;
                   </span>
-                  <blockquote className="m-0 flex-1 font-serif text-lg italic leading-[1.5] text-[#E9E2D6]">
+                  <blockquote className="m-0 flex-1 font-serif text-lg italic leading-[1.5] text-[#5E4435]">
                     {t.quote}
                   </blockquote>
-                  <figcaption className="border-t border-white/10 pt-[18px]">
-                    <div className="text-sm font-bold text-white">{t.role}</div>
-                    <div className="mt-[3px] text-[13px] text-slate-muted">{t.org}</div>
+                  <figcaption className="border-t border-line-soft pt-[18px]">
+                    <div className="text-sm font-bold text-ink">{t.role}</div>
+                    <div className="mt-[3px] text-[13px] text-taupe">{t.org}</div>
                   </figcaption>
                 </Reveal>
               ))}

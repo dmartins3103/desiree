@@ -42,14 +42,14 @@ export default function BlogIndex() {
       />
       <Nav />
       <main id="top">
-        <section className="bg-ink px-6 pb-20 pt-[148px] text-white">
+        <section className="bg-cloud px-6 pb-20 pt-[148px] text-espresso">
           <div className="mx-auto max-w-[1200px]">
             <Reveal className="max-w-[720px]">
-              <Eyebrow tone="light">Insights &amp; Conteúdo</Eyebrow>
-              <h1 className="m-0 mb-5 font-serif text-[clamp(34px,4.4vw,54px)] font-normal leading-[1.1] tracking-[-0.01em]">
+              <Eyebrow>Insights &amp; Conteúdo</Eyebrow>
+              <h1 className="m-0 mb-5 font-serif text-[clamp(34px,4.4vw,54px)] font-normal leading-[1.1] tracking-[-0.01em] text-ink">
                 Conhecimento que antecipa decisões.
               </h1>
-              <p className="m-0 text-lg leading-[1.6] text-mist">
+              <p className="m-0 text-lg leading-[1.6] text-[#6E5547]">
                 Artigos sobre NR-1, riscos psicossociais, compliance, holding familiar e
                 patrimonial, governança corporativa e planejamento sucessório.
               </p>
@@ -57,7 +57,7 @@ export default function BlogIndex() {
           </div>
         </section>
 
-        <section className="bg-cloud px-6 py-[clamp(64px,8vw,104px)]">
+        <section className="bg-white px-6 py-[clamp(64px,8vw,104px)]">
           <div className="mx-auto max-w-[1200px]">
             <Reveal className="mb-10 flex flex-wrap gap-2.5">
               {categories.map((cat) => (

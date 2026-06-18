@@ -74,30 +74,30 @@ export default async function ArticlePage({
       <main id="top">
         <article>
           {/* Cabeçalho */}
-          <header className="bg-ink px-6 pb-16 pt-[140px] text-white">
+          <header className="bg-cloud px-6 pb-16 pt-[140px] text-espresso">
             <div className="mx-auto max-w-[760px]">
-              <nav aria-label="Trilha" className="mb-7 text-[13px] text-mist">
-                <Link href="/" className="text-mist no-underline hover:text-gold">
+              <nav aria-label="Trilha" className="mb-7 text-[13px] text-taupe">
+                <Link href="/" className="text-taupe no-underline hover:text-gold-dark">
                   Início
                 </Link>
-                <span className="mx-2 text-gold/50">/</span>
-                <Link href="/blog" className="text-mist no-underline hover:text-gold">
+                <span className="mx-2 text-gold-dark/50">/</span>
+                <Link href="/blog" className="text-taupe no-underline hover:text-gold-dark">
                   Blog
                 </Link>
               </nav>
-              <div className="mb-5 flex flex-wrap items-center gap-3 text-[12px] font-bold uppercase tracking-[0.14em] text-gold">
+              <div className="mb-5 flex flex-wrap items-center gap-3 text-[12px] font-bold uppercase tracking-[0.14em] text-gold-dark">
                 <span>{post.cat}</span>
-                <span className="text-gold/40">·</span>
-                <time dateTime={post.date} className="text-slate-muted">
+                <span className="text-gold-dark/40">·</span>
+                <time dateTime={post.date} className="text-taupe">
                   {dateFmt.format(new Date(post.date))}
                 </time>
-                <span className="text-gold/40">·</span>
-                <span className="text-slate-muted">{post.readingTime}</span>
+                <span className="text-gold-dark/40">·</span>
+                <span className="text-taupe">{post.readingTime}</span>
               </div>
-              <h1 className="m-0 font-serif text-[clamp(30px,4vw,48px)] font-normal leading-[1.12] tracking-[-0.01em]">
+              <h1 className="m-0 font-serif text-[clamp(30px,4vw,48px)] font-normal leading-[1.12] tracking-[-0.01em] text-ink">
                 {post.title}
               </h1>
-              <p className="m-0 mt-5 text-lg leading-[1.6] text-mist">{post.excerpt}</p>
+              <p className="m-0 mt-5 text-lg leading-[1.6] text-[#6E5547]">{post.excerpt}</p>
             </div>
           </header>
 

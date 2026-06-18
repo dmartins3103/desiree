@@ -3,14 +3,14 @@ import { ArrowRight } from "@/components/icons";
 
 export default function NotFound() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center bg-ink px-6 text-center text-white">
-      <span className="mb-6 text-xs font-semibold uppercase tracking-[0.24em] text-gold">
+    <main className="flex min-h-screen flex-col items-center justify-center bg-cloud px-6 text-center text-espresso">
+      <span className="mb-6 text-xs font-semibold uppercase tracking-[0.24em] text-gold-dark">
         Erro 404
       </span>
-      <h1 className="m-0 mb-4 font-serif text-[clamp(34px,5vw,56px)] font-normal leading-[1.1]">
+      <h1 className="m-0 mb-4 font-serif text-[clamp(34px,5vw,56px)] font-normal leading-[1.1] text-ink">
         Página não encontrada
       </h1>
-      <p className="m-0 mb-9 max-w-[440px] text-lg leading-[1.6] text-mist">
+      <p className="m-0 mb-9 max-w-[440px] text-lg leading-[1.6] text-[#6E5547]">
         A página que você procura não existe ou foi movida.
       </p>
       <Link
