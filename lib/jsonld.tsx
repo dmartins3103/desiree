@@ -25,7 +25,7 @@ export function organizationJsonLd() {
     },
     areaServed: { "@type": "Country", name: site.areaServed },
     knowsLanguage: "pt-BR",
-    sameAs: [whatsappUrl, site.instagramUrl],
+    sameAs: [whatsappUrl, site.instagramUrl, site.linkedinUrl],
     founder: {
       "@type": "Person",
       name: site.name,

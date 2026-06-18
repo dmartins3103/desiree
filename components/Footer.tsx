@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { addressLine1, addressLine2, mapsUrl, pegMark, site, whatsappUrl } from "@/lib/site";
+import { InstagramIcon, LinkedInIcon } from "@/components/icons";
 
 const footerNav = [
   { href: "/#riscos", label: "Mapa de Riscos" },
@@ -56,14 +57,6 @@ export default function Footer() {
                 {site.email}
               </a>
               <a
-                href={site.instagramUrl}
-                target="_blank"
-                rel="noopener"
-                className="text-[15px] text-mist-soft no-underline hover:text-gold"
-              >
-                {site.instagramHandle}
-              </a>
-              <a
                 href={mapsUrl}
                 target="_blank"
                 rel="noopener"
@@ -90,6 +83,26 @@ export default function Footer() {
                   {addressLine2}
                 </address>
               </a>
+              <div className="mt-3 flex items-center gap-3">
+                <a
+                  href={site.instagramUrl}
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Instagram de Desirée Parada"
+                  className="flex h-10 w-10 items-center justify-center rounded-full border border-gold/40 text-gold-light transition-colors hover:border-gold hover:bg-gold hover:text-night"
+                >
+                  <InstagramIcon />
+                </a>
+                <a
+                  href={site.linkedinUrl}
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="LinkedIn de Desirée Parada"
+                  className="flex h-10 w-10 items-center justify-center rounded-full border border-gold/40 text-gold-light transition-colors hover:border-gold hover:bg-gold hover:text-night"
+                >
+                  <LinkedInIcon />
+                </a>
+              </div>
             </div>
           </div>
           <div>

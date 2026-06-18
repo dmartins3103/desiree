@@ -12,7 +12,7 @@ export const site = {
   // Meta description do Google (ideal ≤ ~155 caracteres, persuasiva e com palavras-chave).
   description:
     "Assessoria jurídica estratégica para empresas e famílias empresárias: NR-1, compliance, governança, holding familiar e sucessão. Agende seu diagnóstico.",
-  email: "desiree@morisakieparada.com.br",
+  email: "desiree@desireeparada.com.br",
   phoneDisplay: "(21) 97596-6969",
   phoneE164: "+5521975966969",
   landlineDisplay: "(21) 3596-9162",
@@ -22,6 +22,7 @@ export const site = {
     "Olá Desirée, gostaria de agendar um diagnóstico estratégico.",
   instagramHandle: "@desireeparada.adv",
   instagramUrl: "https://instagram.com/desireeparada.adv",
+  linkedinUrl: "https://www.linkedin.com/in/desir%C3%A9e-parada-370b7239a/",
   areaServed: "Brasil",
   pegRegistered: true,
   address: {
