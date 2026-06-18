@@ -19,11 +19,13 @@ export default function Nav() {
 
   return (
     <header
-      className="fixed inset-x-0 top-0 z-[60] transition-[background,backdrop-filter,border-color] duration-300"
+      className="fixed inset-x-0 top-0 z-[60] transition-[background,backdrop-filter,border-color,box-shadow] duration-300"
       style={{
-        background: scrolled ? "rgba(251,250,247,.92)" : "rgba(251,250,247,0)",
-        backdropFilter: scrolled ? "blur(12px)" : "blur(0)",
-        borderBottom: `1px solid ${scrolled ? "rgba(94,68,53,.12)" : "rgba(94,68,53,0)"}`,
+        background: scrolled ? "rgba(251,250,247,.95)" : "rgba(251,250,247,.72)",
+        backdropFilter: "blur(12px)",
+        WebkitBackdropFilter: "blur(12px)",
+        borderBottom: `1px solid ${scrolled ? "rgba(94,68,53,.14)" : "rgba(94,68,53,.08)"}`,
+        boxShadow: scrolled ? "0 8px 28px rgba(94,68,53,.07)" : "none",
       }}
     >
       <div className="mx-auto flex max-w-[1200px] items-center justify-between gap-6 px-6 py-4">
