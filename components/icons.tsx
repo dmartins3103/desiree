@@ -23,6 +23,23 @@ export function LinkedInIcon({ size = 18 }: { size?: number }) {
   );
 }
 
+export function WhatsAppIcon({ size = 18 }: { size?: number }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path
+        d="M12 3.5a8.5 8.5 0 0 0-7.3 12.8L3.5 20.5l4.4-1.1A8.5 8.5 0 1 0 12 3.5Z"
+        stroke="currentColor"
+        strokeWidth="1.6"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M9 8.6c.2-.5.4-.5.7-.5h.5c.2 0 .4 0 .6.5l.6 1.4c0 .2 0 .3-.1.5l-.4.5c-.1.1-.2.3 0 .5.3.5.7.9 1.1 1.2.4.3.7.4.9.5.2 0 .3 0 .4-.1l.5-.6c.2-.2.3-.1.5-.1l1.4.7c.2.1.4.2.4.3.1.4 0 .9-.2 1.2-.3.4-.9.8-1.5.8-1.4.1-2.9-.6-4.1-1.6-.8-.7-1.5-1.6-1.9-2.6-.2-.6-.2-1.2.1-1.7Z"
+        fill="currentColor"
+      />
+    </svg>
+  );
+}
+
 export function ArrowRight({
   color = "#1C140E",
   size = 16,

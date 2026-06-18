@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Cormorant_Garamond, Hanken_Grotesk } from "next/font/google";
 import { site } from "@/lib/site";
 import { JsonLd, organizationJsonLd, websiteJsonLd } from "@/lib/jsonld";
+import SocialBar from "@/components/SocialBar";
 import "./globals.css";
 
 const cormorant = Cormorant_Garamond({
@@ -89,6 +90,7 @@ export default function RootLayout({
       <body>
         <JsonLd data={[organizationJsonLd(), websiteJsonLd()]} />
         {children}
+        <SocialBar />
       </body>
     </html>
   );

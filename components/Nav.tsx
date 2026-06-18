@@ -3,7 +3,8 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import { nav, whatsappUrl } from "@/lib/site";
+import { nav, site, whatsappUrl } from "@/lib/site";
+import { InstagramIcon, LinkedInIcon, WhatsAppIcon } from "@/components/icons";
 
 export default function Nav() {
   const [scrolled, setScrolled] = useState(false);
@@ -58,6 +59,27 @@ export default function Nav() {
         </nav>
 
         <div className="hidden flex-none items-center gap-3.5 lg:flex">
+          <div className="flex items-center gap-2">
+            <a
+              href={site.instagramUrl}
+              target="_blank"
+              rel="noopener"
+              aria-label="Instagram"
+              className="flex h-9 w-9 items-center justify-center rounded-full border border-white/20 text-mist-soft transition-colors hover:border-gold hover:text-gold"
+            >
+              <InstagramIcon size={16} />
+            </a>
+            <a
+              href={site.linkedinUrl}
+              target="_blank"
+              rel="noopener"
+              aria-label="LinkedIn"
+              className="flex h-9 w-9 items-center justify-center rounded-full border border-white/20 text-mist-soft transition-colors hover:border-gold hover:text-gold"
+            >
+              <LinkedInIcon size={16} />
+            </a>
+          </div>
+          <span className="h-5 w-px bg-white/15" aria-hidden="true" />
           <a
             href={whatsappUrl}
             target="_blank"
@@ -106,6 +128,35 @@ export default function Nav() {
           >
             Agendar Diagnóstico Estratégico
           </Link>
+          <div className="mt-4 flex items-center justify-center gap-3">
+            <a
+              href={site.instagramUrl}
+              target="_blank"
+              rel="noopener"
+              aria-label="Instagram"
+              className="flex h-11 w-11 items-center justify-center rounded-full border border-gold/40 text-gold-light transition-colors hover:bg-gold hover:text-night"
+            >
+              <InstagramIcon />
+            </a>
+            <a
+              href={site.linkedinUrl}
+              target="_blank"
+              rel="noopener"
+              aria-label="LinkedIn"
+              className="flex h-11 w-11 items-center justify-center rounded-full border border-gold/40 text-gold-light transition-colors hover:bg-gold hover:text-night"
+            >
+              <LinkedInIcon />
+            </a>
+            <a
+              href={whatsappUrl}
+              target="_blank"
+              rel="noopener"
+              aria-label="WhatsApp"
+              className="flex h-11 w-11 items-center justify-center rounded-full border border-gold/40 text-gold-light transition-colors hover:bg-gold hover:text-night"
+            >
+              <WhatsAppIcon />
+            </a>
+          </div>
         </div>
       )}
     </header>
