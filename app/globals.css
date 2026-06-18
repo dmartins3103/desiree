@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+@theme {
+  --color-night: #0b1120;
+  --color-darknight: #080d18;
+  --color-ink: #0f172a;
+  --color-gold: #d4af37;
+  --color-gold-light: #e5c76b;
+  --color-gold-dark: #94772a;
+  --color-mist: #aebace;
+  --color-mist-soft: #cbd5e1;
+  --color-slate-muted: #8d9bb3;
+  --color-line-soft: #e4e8f0;
+  --color-cloud: #f5f7fa;
+
+  --font-serif: var(--font-spectral), Georgia, serif;
+  --font-sans: var(--font-hanken), system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  margin: 0;
+  background: #fff;
+  color: #0f172a;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: #d4af37;
+  color: #0b1120;
+}
+
+/* Reveal on scroll */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity 0.8s cubic-bezier(0.22, 0.61, 0.36, 1),
+    transform 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* FAQ native disclosure */
+details > summary {
+  list-style: none;
+  cursor: pointer;
+}
+details > summary::-webkit-details-marker {
+  display: none;
+}
+details[open] > summary .faq-mark {
+  background: #d4af37;
+  color: #0b1120;
+  border-color: #d4af37;
+}
